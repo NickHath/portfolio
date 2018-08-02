@@ -1,12 +1,25 @@
 /* reset */
-@import './reset';
+@import './partials/reset';
 
 /* modules */
 @import './modules/mixins';
 @import './modules/variables';
 
-/* partials */
+/* base styling */
 @import './partials/base';
+
+/* partials for each subsection */
+@import './partials/sections/header';
+@import './partials/sections/skills';
+@import './partials/sections/projects';
+@import './partials/sections/experience';
+@import './partials/sections/education';
+@import './partials/sections/resume';
+@import './partials/sections/readings';
+@import './partials/sections/footer';
+
+/* media breakpoints */
+@import './partials/breakpoints';
 
 /* third-party styling */
 @import '../packages/slick/slick.css';

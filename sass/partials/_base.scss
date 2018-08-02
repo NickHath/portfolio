@@ -14,6 +14,8 @@ body {
   grid-template-columns: 15% 15% 40% 15% 15%;
   grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
   grid-gap: none;
+
+  /* all grid-areas are defined at the top of their respective scss partial */
   grid-template-areas:  '..... ..... header ..... .....'
                         '..... skills skills skills .....'
                         '..... projects projects projects .....'
@@ -32,34 +34,6 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
-}
-header {
-  padding-top: 50%;
-  grid-area: header;
-}
-.skills {
-  grid-area: skills;
-}
-.icons {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(2, 50%);
-  justify-content: space-around;
-}
-.icons figure {
-  width: 60%;
-}
-.icons figure figcaption {
-  -webkit-transition: opacity 0.3s;
-  color: $secondary-font-color;
-  opacity: 0;
-}
-.icons figure:hover figcaption {
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
-}
-.projects {
-  grid-area: projects;
 }
 .education {
   grid-area: education;
@@ -101,29 +75,3 @@ footer {
   stroke: $highlight-blue;
 }
 
-/* Preview image for slider */
-.project-description {
-  display: flex !important;
-  align-items: center;
-} 
-.project-description article {
-  padding-top: 10%;
-  width: 40%;
-  text-align: left;
-}
-.project-preview-photo {
-  padding-top: 10%;
-  width: 60%;
-  display: inline;
-}
-.project-preview-photo img {
-  width: 100%;
-}
-
-
-/* hide svg animation on screens smaller than 700px wide */
-@media (max-width: 700px) {
-  .svg-bg {
-    display: none;
-  }
-}

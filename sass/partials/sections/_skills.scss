@@ -1,0 +1,21 @@
+.skills {
+  grid-area: skills;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(2, 50%);
+  justify-content: space-around;
+}
+.icons figure {
+  width: 60%;
+}
+.icons figure figcaption {
+  -webkit-transition: opacity 0.3s;
+  color: $secondary-font-color;
+  opacity: 0;
+}
+.icons figure:hover figcaption {
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}

@@ -1,0 +1,22 @@
+.projects {
+  grid-area: projects;
+}
+
+/* Preview image for slider */
+.project-description {
+  display: flex !important;
+  align-items: center;
+} 
+.project-description article {
+  padding-top: 10%;
+  width: 40%;
+  text-align: left;
+}
+.project-preview-photo {
+  padding-top: 10%;
+  width: 60%;
+  display: inline;
+}
+.project-preview-photo img {
+  width: 100%;
+}
