@@ -1,0 +1,204 @@
+/* reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import '../packages/slick/slick.css';
+@import '../packages/slick/slick-theme.css';
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* modules */
+/* partials */
+html {
+  height: 1000vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Muli", sans-serif;
+  color: #424242;
+  display: grid;
+  font-size: 1rem;
+  grid-template-columns: 15% 15% 40% 15% 15%;
+  grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
+  grid-gap: none;
+  grid-template-areas: "..... ..... header ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... ..... readings ..... ....." "..... ..... footer ..... .....";
+}
+
+header, section, footer {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+header {
+  padding-top: 50%;
+  grid-area: header;
+}
+
+.skills {
+  grid-area: skills;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(2, 50%);
+  justify-content: space-around;
+}
+
+.icons figure {
+  width: 60%;
+}
+
+.icons figure figcaption {
+  -webkit-transition: opacity 0.3s;
+  color: #8F8F8F;
+  opacity: 0;
+}
+
+.icons figure:hover figcaption {
+  -webkit-transition: opacity 0.3s;
+  opacity: 1;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.education {
+  grid-area: education;
+}
+
+.experience {
+  grid-area: experience;
+}
+
+.resume {
+  grid-area: resume;
+}
+
+.readings {
+  grid-area: readings;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.svg-bg {
+  /* temporarily hide the svg... */
+  /* display: none; */
+  /* html can be on top, but lines change depending on size of window */
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  /* see preserveAspectRatio on the html element for scaling details */
+  width: 100%;
+  height: 1000vh;
+}
+
+.svg-line {
+  stroke-width: 1;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.inner-left, .inner-right {
+  stroke: #EF5350;
+}
+
+.outer-left, .outer-right {
+  stroke: #4DD0E1;
+}
+
+/* Preview image for slider */
+.project-description {
+  display: flex !important;
+  align-items: center;
+}
+
+.project-description article {
+  padding-top: 10%;
+  width: 40%;
+  text-align: left;
+}
+
+.project-preview-photo {
+  padding-top: 10%;
+  width: 60%;
+  display: inline;
+}
+
+.project-preview-photo img {
+  width: 100%;
+}
+
+/* hide svg animation on screens smaller than 700px wide */
+@media (max-width: 700px) {
+  .svg-bg {
+    display: none;
+  }
+}
+/* third-party styling */
+
+/*# sourceMappingURL=main.css.map */

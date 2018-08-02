@@ -1,0 +1,13 @@
+/* reset */
+@import './reset';
+
+/* modules */
+@import './modules/mixins';
+@import './modules/variables';
+
+/* partials */
+@import './partials/base';
+
+/* third-party styling */
+@import '../packages/slick/slick.css';
+@import '../packages/slick/slick-theme.css';

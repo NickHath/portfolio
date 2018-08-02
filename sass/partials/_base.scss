@@ -7,8 +7,8 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Muli', sans-serif;
-  color: #424242;
+  font-family: $main-font;
+  color: $font-color;
   display: grid;
   font-size: 1rem;
   grid-template-columns: 15% 15% 40% 15% 15%;
@@ -51,7 +51,7 @@ header {
 }
 .icons figure figcaption {
   -webkit-transition: opacity 0.3s;
-  color: #8F8F8F;
+  color: $secondary-font-color;
   opacity: 0;
 }
 .icons figure:hover figcaption {
@@ -95,10 +95,10 @@ footer {
   fill: none;
 }
 .inner-left, .inner-right {
-  stroke: #EF5350;
+  stroke: $highlight-red;
 }
 .outer-left, .outer-right {
-  stroke: #4DD0E1;
+  stroke: $highlight-blue;
 }
 
 /* Preview image for slider */
