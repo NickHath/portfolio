@@ -1,0 +1,10 @@
+/* media queries - defaults to min-width */
+/* see _variables.scss for breakpoint values */
+@mixin media-query($width, $type: min) {
+  @if map_has_key($breakpoints, $width) {
+      $width: map_get($breakpoints, $width);
+      @media only screen and (#{$type}-width: $width - 1) {
+          @content;
+      }
+  }
+}
