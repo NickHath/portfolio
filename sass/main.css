@@ -58,6 +58,9 @@ table {
 }
 
 /* modules */
+/* media queries - defaults to min-width */
+/* see _variables.scss for breakpoint values */
+/* media query breakpoints */
 /* base styling */
 html {
   height: 1000vh;
@@ -203,5 +206,10 @@ header {
   }
 }
 /* third-party styling */
+/* custom slick styling */
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
 
 /*# sourceMappingURL=main.css.map */
