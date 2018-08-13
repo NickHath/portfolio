@@ -114,6 +114,7 @@ footer {
   grid-area: footer;
 }
 
+/* SVG STYLING */
 .svg-bg {
   /* temporarily hide the svg... */
   /* display: none; */

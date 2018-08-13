@@ -50,6 +50,8 @@ h2 {
 footer {
   grid-area: footer;
 }
+
+/* SVG STYLING */
 .svg-bg {
   /* temporarily hide the svg... */
   /* display: none; */
@@ -64,6 +66,11 @@ footer {
   height: 1000vh;
 }
 .svg-line {
+  // offset should be height of element
+  // set it automatically to length of paths...
+  // stroke-dasharray: 650;
+  // stroke-dashoffset: 600;
+  
   stroke-width: 1;
   stroke-linejoin: round;
   fill: none;
@@ -74,4 +81,3 @@ footer {
 .outer-left, .outer-right {
   stroke: $highlight-blue;
 }
-
