@@ -8,6 +8,9 @@
 /* base styling */
 @import './partials/base';
 
+/* svg styling */
+@import './partials/svg';
+
 /* partials for each subsection */
 @import './partials/sections/header';
 @import './partials/sections/skills';

@@ -1,29 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Muli');
 html {
-  height: 1000vh;
   width: 100%;
+  height: 100vh;
   box-sizing: border-box;
 }
 body {
   width: 100%;
-  height: 100%;
   font-family: $main-font;
   color: $font-color;
   display: grid;
+  grid-gap: 0;
   font-size: 1rem;
-  grid-template-columns: 15% 15% 40% 15% 15%;
-  grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
-  grid-gap: none;
-
   /* all grid-areas are defined at the top of their respective scss partial */
-  grid-template-areas:  '..... ..... header ..... .....'
-                        '..... skills skills skills .....'
-                        '..... projects projects projects .....'
-                        '..... ..... experience ..... .....'
-                        '..... ..... education ..... .....'
-                        '..... ..... resume ..... .....'
-                        '..... ..... readings ..... .....'
-                        '..... ..... footer ..... .....'
+  grid-template-areas:  'header'
+                        'skills'
+                        'projects'
+                        'experience'
+                        'education'
+                        'resume'
+                        'readings'
+                        'footer'
                         ;
 }
 header, section, footer {
@@ -35,49 +31,26 @@ h1 {
 h2 {
   font-size: 1.5rem;
 }
-.education {
-  grid-area: education;
-}
-.experience {
-  grid-area: experience;
-}
-.resume {
-  grid-area: resume;
-}
-.readings {
-  grid-area: readings;
-}
-footer {
-  grid-area: footer;
-}
 
-/* SVG STYLING */
-.svg-bg {
-  /* temporarily hide the svg... */
-  /* display: none; */
+/* styling for desktop */
+@media screen and (min-width: $tablet-breakpoint) {
+  html {
+    height: 1000vh;
+  }
+  body {
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
+    grid-gap: none;
 
-  /* html can be on top, but lines change depending on size of window */
-  position: absolute;
-  top: 0;
-  z-index: -1;
-
-  /* see preserveAspectRatio on the html element for scaling details */
-  width: 100%;
-  height: 1000vh;
-}
-.svg-line {
-  // offset should be height of element
-  // set it automatically to length of paths...
-  // stroke-dasharray: 650;
-  // stroke-dashoffset: 600;
-  
-  stroke-width: 1;
-  stroke-linejoin: round;
-  fill: none;
-}
-.inner-left, .inner-right {
-  stroke: $highlight-red;
-}
-.outer-left, .outer-right {
-  stroke: $highlight-blue;
+    /* all grid-areas are defined at the top of their respective scss partial */
+    grid-template-areas:  '..... ..... header ..... .....'
+                          '..... skills skills skills .....'
+                          '..... projects projects projects .....'
+                          '..... ..... experience ..... .....'
+                          '..... ..... education ..... .....'
+                          '..... ..... resume ..... .....'
+                          '..... ..... readings ..... .....'
+                          '..... ..... footer ..... .....'
+                          ;    
+  }
 }

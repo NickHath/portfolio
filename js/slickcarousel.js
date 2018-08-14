@@ -1,6 +1,14 @@
 $(document).ready(function() {
-  $('.project-details').slick({
+  // const tabletWidth = 768;
+  $('.project-slideshow').slick({
     arrows: true,
-    dots: true
+    dots: true,
+    // mobileFirst: true,
+    // responsive: [
+    //   {
+    //     breakpoint: tabletWidth,
+    //     settings: 'unslick'
+    //   }
+    // ]
   });
 });

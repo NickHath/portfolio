@@ -63,23 +63,20 @@ table {
 /* media query breakpoints */
 /* base styling */
 html {
-  height: 1000vh;
   width: 100%;
+  height: 100vh;
   box-sizing: border-box;
 }
 
 body {
   width: 100%;
-  height: 100%;
   font-family: "Muli", sans-serif;
   color: #424242;
   display: grid;
+  grid-gap: 0;
   font-size: 1rem;
-  grid-template-columns: 15% 15% 40% 15% 15%;
-  grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
-  grid-gap: none;
   /* all grid-areas are defined at the top of their respective scss partial */
-  grid-template-areas: "..... ..... header ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... ..... readings ..... ....." "..... ..... footer ..... .....";
+  grid-template-areas: "header" "skills" "projects" "experience" "education" "resume" "readings" "footer";
 }
 
 header, section, footer {
@@ -94,30 +91,25 @@ h2 {
   font-size: 1.5rem;
 }
 
-.education {
-  grid-area: education;
-}
+/* styling for desktop */
+@media screen and (min-width: 768px) {
+  html {
+    height: 1000vh;
+  }
 
-.experience {
-  grid-area: experience;
+  body {
+    grid-template-columns: 15% 15% 40% 15% 15%;
+    grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
+    grid-gap: none;
+    /* all grid-areas are defined at the top of their respective scss partial */
+    grid-template-areas: "..... ..... header ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... ..... readings ..... ....." "..... ..... footer ..... .....";
+  }
 }
-
-.resume {
-  grid-area: resume;
-}
-
-.readings {
-  grid-area: readings;
-}
-
-footer {
-  grid-area: footer;
-}
-
+/* svg styling */
 /* SVG STYLING */
 .svg-bg {
   /* temporarily hide the svg... */
-  /* display: none; */
+  display: none;
   /* html can be on top, but lines change depending on size of window */
   position: absolute;
   top: 0;
@@ -141,6 +133,12 @@ footer {
   stroke: #4DD0E1;
 }
 
+/* styling for desktop */
+@media screen and (min-width: 768px) {
+  .svg-bg {
+    display: block;
+  }
+}
 /* partials for each subsection */
 header {
   padding-top: 50%;
@@ -199,13 +197,28 @@ header {
   width: 100%;
 }
 
+.experience {
+  grid-area: experience;
+}
+
+.education {
+  grid-area: education;
+}
+
+.resume {
+  grid-area: resume;
+}
+
+.readings {
+  grid-area: readings;
+}
+
+footer {
+  grid-area: footer;
+}
+
 /* media breakpoints */
 /* hide svg animation on screens smaller than 700px wide */
-@media (max-width: 700px) {
-  .svg-bg {
-    display: none;
-  }
-}
 /* third-party styling */
 /* custom slick styling */
 .slick-prev:before,

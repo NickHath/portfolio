@@ -16,6 +16,6 @@
 
 // fetchReadings();
 
-$(document).ready(function() {
-  $.ajax({ url: '',  })
-})
+// $(document).ready(function() {
+//   $.ajax({ url: '',  })
+// })
