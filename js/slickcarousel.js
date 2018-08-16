@@ -3,6 +3,7 @@ $(document).ready(function() {
   $('.project-slideshow').slick({
     arrows: true,
     dots: true,
+    mobileFirst: true
     // mobileFirst: true,
     // responsive: [
     //   {

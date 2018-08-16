@@ -1,7 +1,23 @@
+// web fonts 
+// OPTIMIZE BY GETTING RID OF EXTRANEOUS FONTS 
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
+// thin, simple sans-serif font
+// could use the rounded version (find on google fonts)
+// h2 - light, 100
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900');
+
+// rounded, visually interesting font
+// h1 - bold 700
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+// fun, elegant font
+@import url('https://fonts.googleapis.com/css?family=Vidaloka');
+
+/* ------------------------- */
+
 // typography
-$main-font: 'Muli', sans-serif;
+$main-font: 'M PLUS 1p', 'Muli', sans-serif;
 $font-color: #424242;
 $secondary-font-color: #8F8F8F;
 
