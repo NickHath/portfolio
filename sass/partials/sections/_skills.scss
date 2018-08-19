@@ -2,20 +2,39 @@
   grid-area: skills;
 }
 .icons {
+  // max-width: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(2, 50%);
-  justify-content: space-around;
+  justify-content: space-between;
+
 }
 .icons figure {
-  width: 60%;
+  width: 100%;
+  height: 100%;
 }
-.icons figure figcaption {
-  -webkit-transition: opacity 0.3s;
-  color: $secondary-font-color;
-  opacity: 0;
+
+// DESKTOP STYLING
+@media screen and (min-width: $tablet-breakpoint) {
+
 }
-.icons figure:hover figcaption {
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
-}
+
+// .icons {
+//   display: grid;
+//   grid-template-columns: repeat(5, 20%);
+//   grid-template-rows: repeat(2, 50%);
+//   justify-content: space-around;
+// }
+// .icons figure {
+//   width: 60%;
+// }
+// .icons figure figcaption {
+//   -webkit-transition: opacity 0.3s;
+//   color: $secondary-font-color;
+//   opacity: 0;
+// }
+// .icons figure:hover figcaption {
+//   -webkit-transition: opacity 0.3s;
+//   opacity: 1;
+// }

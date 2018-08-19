@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Vidaloka");
 @import url("https://fonts.googleapis.com/css?family=Muli");
 @import '../packages/slick/slick.css';
 @import '../packages/slick/slick-theme.css';
@@ -60,6 +63,7 @@ table {
 /* modules */
 /* media queries - defaults to min-width */
 /* see _variables.scss for breakpoint values */
+/* ------------------------- */
 /* media query breakpoints */
 /* base styling */
 html {
@@ -70,28 +74,38 @@ html {
 
 body {
   width: 100%;
-  font-family: "Muli", sans-serif;
+  font-family: "M PLUS 1p", "Muli", sans-serif;
   color: #424242;
   display: grid;
   grid-gap: 0;
-  font-size: 1rem;
+  font-size: 1em;
   /* all grid-areas are defined at the top of their respective scss partial */
   grid-template-areas: "header" "skills" "projects" "experience" "education" "resume" "readings" "footer";
 }
 
-header, section, footer {
+.subsection {
   text-align: center;
+  width: 100%;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.625em;
 }
 
-/* styling for desktop */
+h3 {
+  font-size: 1.375em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* DESKTOP STYLING */
 @media screen and (min-width: 768px) {
   html {
     height: 1000vh;
@@ -103,6 +117,18 @@ h2 {
     grid-gap: none;
     /* all grid-areas are defined at the top of their respective scss partial */
     grid-template-areas: "..... ..... header ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... ..... readings ..... ....." "..... ..... footer ..... .....";
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3 {
+    font-size: 1.75em;
   }
 }
 /* svg styling */
@@ -126,11 +152,11 @@ h2 {
 }
 
 .inner-left, .inner-right {
-  stroke: #EF5350;
+  stroke: #EF514F;
 }
 
 .outer-left, .outer-right {
-  stroke: #4DD0E1;
+  stroke: #4FDCEF;
 }
 
 /* styling for desktop */
@@ -141,60 +167,35 @@ h2 {
 }
 /* partials for each subsection */
 header {
-  padding-top: 50%;
   grid-area: header;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 50%;
+  }
+}
 .skills {
   grid-area: skills;
 }
 
 .icons {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(2, 50%);
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .icons figure {
-  width: 60%;
-}
-
-.icons figure figcaption {
-  -webkit-transition: opacity 0.3s;
-  color: #8F8F8F;
-  opacity: 0;
-}
-
-.icons figure:hover figcaption {
-  -webkit-transition: opacity 0.3s;
-  opacity: 1;
+  width: 100%;
+  height: 100%;
 }
 
 .projects {
   grid-area: projects;
-}
-
-/* Preview image for slider */
-.project-description {
-  display: flex !important;
-  align-items: center;
-}
-
-.project-description article {
-  padding-top: 10%;
-  width: 40%;
-  text-align: left;
-}
-
-.project-preview-photo {
-  padding-top: 10%;
-  width: 60%;
-  display: inline;
-}
-
-.project-preview-photo img {
-  width: 100%;
 }
 
 .experience {
