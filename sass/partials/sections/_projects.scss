@@ -1,10 +1,20 @@
 .projects {
   grid-area: projects;
 }
+a.project-url {
+  background-color: transparent;
+  color: $highlight-red;
+  border: none;
+}
+a.project-url:visited {
+  color: $highlight-red-dark;
+}
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-
+  a.project-url:hover {
+    color: $highlight-red-dark;
+  }
 }
 
 // /* Preview image for slider */

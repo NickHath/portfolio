@@ -14,16 +14,25 @@
 // fun, elegant font
 @import url('https://fonts.googleapis.com/css?family=Vidaloka');
 
+//
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+
 /* ------------------------- */
 
 // typography
 $main-font: 'M PLUS 1p', 'Muli', sans-serif;
-$font-color: #424242;
+// $font-color: #424242;
+// $font-color: #3b3a3a;
+$font-color: #303030;
 $secondary-font-color: #8F8F8F;
 
 // colors
 $highlight-red: #EF514F;
+$highlight-red-transparent: rgba(239, 81, 79, 0.15);
+$highlight-red-dark: #A73837;
 $highlight-blue: #4FDCEF;
+$highlight-blue-transparent: rgba(79, 220, 239, 0.15);
 
 /* media query breakpoints */
 $tablet-breakpoint: 768px;

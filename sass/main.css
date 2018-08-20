@@ -75,34 +75,54 @@ html {
 body {
   width: 100%;
   font-family: "M PLUS 1p", "Muli", sans-serif;
-  color: #424242;
+  color: #303030;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  line-height: 1.25em;
   display: grid;
   grid-gap: 0;
-  font-size: 1em;
   /* all grid-areas are defined at the top of their respective scss partial */
   grid-template-areas: "header" "skills" "projects" "experience" "education" "resume" "readings" "footer";
 }
 
 .subsection {
-  text-align: center;
   width: 100%;
+  padding: 2em 0 2em 0;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
 h1 {
   font-size: 2em;
+  line-height: 1.25em;
+  font-weight: 300;
 }
 
 h2 {
-  font-size: 1.625em;
-}
-
-h3 {
   font-size: 1.375em;
+  line-height: 1.13636364em;
+  font-weight: 300;
+  opacity: 0.5;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #4FDCEF;
+  border: 1px solid #4FDCEF;
+  background-color: rgba(79, 220, 239, 0.15);
+  padding: 0.125em;
+}
+
+a:focus {
+  color: #EF514F;
+  border: 1px solid #EF514F;
+  background-color: rgba(239, 81, 79, 0.15);
 }
 
 /* DESKTOP STYLING */
@@ -112,6 +132,7 @@ img {
   }
 
   body {
+    line-height: 1.375em;
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
     grid-gap: none;
@@ -121,14 +142,24 @@ img {
 
   h1 {
     font-size: 3em;
+    line-height: 1.05em;
   }
 
   h2 {
     font-size: 2.25em;
+    line-height: 1.25em;
   }
 
   h3 {
     font-size: 1.75em;
+    line-height: 1.25em;
+  }
+
+  a:hover {
+    cursor: pointer;
+    color: #EF514F;
+    border: 1px solid #EF514F;
+    background-color: rgba(239, 81, 79, 0.15);
   }
 }
 /* svg styling */
@@ -166,7 +197,7 @@ img {
   }
 }
 /* partials for each subsection */
-header {
+header.subsection {
   grid-area: header;
   border-top: 5px solid;
   border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
@@ -198,6 +229,21 @@ header {
   grid-area: projects;
 }
 
+a.project-url {
+  background-color: transparent;
+  color: #EF514F;
+  border: none;
+}
+
+a.project-url:visited {
+  color: #A73837;
+}
+
+@media screen and (min-width: 768px) {
+  a.project-url:hover {
+    color: #A73837;
+  }
+}
 .experience {
   grid-area: experience;
 }
