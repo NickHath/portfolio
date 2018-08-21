@@ -7,7 +7,7 @@
   <title>Nick Hathaway | Software Developer</title>
   <link rel="stylesheet" href="./sass/main.css">
 </head>
-<body>
+<body class="fade">
   <!-- HEADER -->
   <header class="subsection">
     <h1>Nick Hathaway</h1>
@@ -15,24 +15,29 @@
     <!-- LOCATION???? -->
     <p>Here is where my awesome bio would go. Man, I'm great. Hire me!</p>
     <section class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Email</a>
-      <a href="#">Phone</a>
+      <a class="button" href="#">LinkedIn</a>
+      <a class="button" href="#">GitHub</a>
+      <a class="button" href="#">Email</a>
+      <a class="button" href="#">Phone</a>
     </section>
   </header>
 
   <!-- SKILLS -->
   <section class="subsection skills">
-    <h1>Skills</h1>
+    <h1 class="section-header">Skills</h1>
     <section class="icons">
+
+      <figure>
+        <img src="./assets/dev-icons/nodejs-original.svg" alt="Node Icon" />
+        <figcaption>Node</figcaption>
+      </figure>
       <figure>
         <img src="./assets/dev-icons/react-original.svg" alt="React Icon" />
         <figcaption>React</figcaption>
       </figure>
       <figure>
-        <img src="./assets/dev-icons/nodejs-original.svg" alt="Node Icon" />
-        <figcaption>Node</figcaption>
+        <img src="./assets/dev-icons/redux-original.svg" alt="Redux Icon" />
+        <figcaption>Redux</figcaption>
       </figure>
       <figure>
         <img src="./assets/dev-icons/javascript-plain.svg" alt="JavaScript Icon" />
@@ -46,18 +51,18 @@
         <img src="./assets/dev-icons/css3-original.svg" alt="CSS3 Icon" />
         <figcaption>CSS3</figcaption>
       </figure>
-      <figure>
+      <!-- <figure>
         <img src="./assets/dev-icons/git-original.svg" alt="Git Icon" />
         <figcaption>Git</figcaption>
-      </figure>
+      </figure> -->
       <figure>
         <img src="./assets/dev-icons/sass-original.svg" alt="SASS Icon" />
         <figcaption>SASS</figcaption>
       </figure>
-      <figure>
+      <!-- <figure>
         <img src="./assets/dev-icons/gulp-plain.svg" alt="Gulp Icon" />
         <figcaption>Gulp</figcaption>
-      </figure>
+      </figure> -->
       <figure>
         <img src="./assets/dev-icons/postgresql-original.svg" alt="Postgres Icon" />
         <figcaption>Postgres</figcaption>
@@ -76,7 +81,7 @@
 
   <!-- PROJECTS - USE SLICK CAROUSEL!!! -->
   <section class="subsection projects">
-    <h1>Projects</h1>  
+    <h1 class="section-header">Projects</h1>  
     <section class="project-details">
       <section class="project-slideshow">
         <!-- SLIDESHOW HERE -->
@@ -92,7 +97,7 @@
             <li>Integrated with Yelp's Fusion v3 API to gather data local to a user's city</li>
           </ul>
           <!-- Case Study will have github link, video demo, write up, etc -->
-          <a href="#" target="_blank">View Case Study</a>
+          <a class="button" href="#" target="_blank">View Case Study</a>
         </article>
       </section>
     </section>
@@ -110,7 +115,7 @@
                 <li>Used Twilio's API to demo a SMS-based scavenger hunt with 20+ participants</li>
               </ul>
               <!-- Case study will have github link, video demo, write up, etc -->
-              <a href="#" target="_blank">View Case Study</a>
+              <a class="button" href="#" target="_blank">View Case Study</a>
             </article>
             <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
           </section>
@@ -131,7 +136,7 @@
                 <li>Used Twilio's API to demo a SMS-based scavenger hunt with 20+ participants</li>
               </ul>
               <!-- Case study will have github link, video demo, write up, etc -->
-              <a href="#" target="_blank">View Case Study</a>
+              <a class="button" href="#" target="_blank">View Case Study</a>
             </article>
         </section>
     </section>
@@ -142,7 +147,7 @@
             <h2>Peanut Gallery</h2>
             <p>Description: An IMDb review web scraper. Results can be downloaded as HTML or TXT.</p>
             <!-- Case study will have github link, video demo, write up, etc -->
-            <a href="#" target="_blank">View Case Study</a>
+            <a class="button" href="#" target="_blank">View Case Study</a>
           </article>
           <img class="project-preview-photo" src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="Peanut Gallery landing page">
         </section>
@@ -156,7 +161,7 @@
           <h2>Peanut Gallery</h2>
           <p>Description: An IMDb review web scraper. Results can be downloaded as HTML or TXT.</p>
           <!-- Case study will have github link, video demo, write up, etc -->
-          <a href="#" target="_blank">View Case Study</a>
+          <a class="button" href="#" target="_blank">View Case Study</a>
         </article>
       </section>
     </section>
@@ -164,9 +169,9 @@
 
   <!-- EXPERIENCE -->
   <section class="subsection experience">
-      <h1>Experience</h1>   
+      <h1 class="section-header">Experience</h1>   
       <section class="experience-details">
-        <img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo">
+<span>        <img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo"></span>
         <article>
           <h2>DevMountain - Web Immersive Mentor</h2>
           <h3>June 2018 to Present</h3>
@@ -179,7 +184,7 @@
         </article>
       </section> 
       <section class="experience-details">
-        <img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo">
+        <span><img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo"></span>
         <article>
           <h2>DevMountain - Basecamp Mentor</h2>
           <h3>Jan. 2018 to May 2018</h3>
@@ -193,7 +198,7 @@
         </article>
       </section> 
       <section class="experience-details">
-        <img src="./assets/experience-education-icons/hackyale.png" alt="HackYale logo">
+        <span><img src="./assets/experience-education-icons/hackyale.png" alt="HackYale logo"></span>
         <article>
           <h2>HackYale - Instructor</h2>
           <h3>Feb. 2014 to Jan. 2016</h3>
@@ -207,7 +212,7 @@
         </article>
       </section>
       <section class="experience-details">
-        <img src="./assets/experience-education-icons/fusionmediagroup.png" alt="Fusion Media Group logo">
+        <span><img src="./assets/experience-education-icons/fusionmediagroup.png" alt="Fusion Media Group logo"></span>
         <article>
           <h2>Fusion - Digital Intern</h2>
           <h3>June 2014 - Sep. 2014</h3>
@@ -225,33 +230,32 @@
 
   <!-- EDUCATION -->
   <section class="subsection education">
-    <h1>Education</h1> 
+    <h1 class="section-header">Education</h1> 
     <section class="education-details">
       <img src="./assets/experience-education-icons/yaleicon.png" alt="Yale logo">
       <article>
-        <h2>Yale University</h2>
-        <h3>2014 to 2018</h3>
+        <h2>Yale University ('18)</h2>
         <p>New Haven, CT</p>
-        <p>B.A. in Linguistics - Computational</p>
-        <p>Overall GPA: 3.50</p>
+        <p>B.A. in Computational Linguistics</p>
+        <a target="_blank" href="#" class="button">Senior Thesis Presentation</a>
       </article>
     </section>   
   </section>
 
   <!-- RESUME / CONTACT -->
   <section class="subsection resume">
-    <h1>Resume</h1> 
-    <a href="./assets/files/Nick Hathaway resume.pdf" download>Download Resume</a>   
+    <h1 class="section-header">Resume</h1> 
+    <a class="button" href="./assets/files/Nick Hathaway resume.pdf" download>Download Resume</a>   
   </section>
 
   <!-- THINGS I'VE BEEN READING -->
   <section class="subsection readings">
-    <h1>Readings</h1>    
+    <h1 class="section-header">Readings</h1>    
   </section>
 
   <!-- FOOTER -->
   <footer class="subsection">
-    <h1>Footer</h1>    
+    <h1 class="section-header">Footer</h1>    
   </footer>
 
   <!-- SVG BACKGROUND - should import from another file -->

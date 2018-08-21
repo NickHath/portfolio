@@ -1,7 +1,14 @@
 .education {
   grid-area: education;
+  border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
 }
-
+.education-details {
+  margin-top: 2em;
+  text-align: center;
+  img {
+    margin-bottom: 0.25em;
+  }
+}
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
 

@@ -10,3 +10,4 @@ var fadeOptions = {
 }
 
 sr.reveal('.experience', fadeOptions);
+// sr.reveal('.subsection', fadeOptions);

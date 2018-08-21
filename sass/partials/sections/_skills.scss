@@ -1,40 +1,41 @@
 .skills {
   grid-area: skills;
+  border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
 }
 .icons {
-  // max-width: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 20%);
   justify-content: space-between;
-
+  align-content: space-between;
 }
 .icons figure {
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  margin: auto;
+  // temp fix using margins
+  margin-bottom: 1.25em;
+  // grid-row-gap: 1em;
+  width: 60%;
+  height: auto;
 }
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-
+  .icons {
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, 50%);
+  }
+  // actual icon size
+  .icons figure {
+  }
+  .icons figure figcaption {
+    -webkit-transition: opacity 0.3s;
+    color: $secondary-font-color;
+    opacity: 0;
+  }
+  .icons figure:hover figcaption {
+    -webkit-transition: opacity 0.3s;
+    opacity: 1;
+  }
 }
-
-// .icons {
-//   display: grid;
-//   grid-template-columns: repeat(5, 20%);
-//   grid-template-rows: repeat(2, 50%);
-//   justify-content: space-around;
-// }
-// .icons figure {
-//   width: 60%;
-// }
-// .icons figure figcaption {
-//   -webkit-transition: opacity 0.3s;
-//   color: $secondary-font-color;
-//   opacity: 0;
-// }
-// .icons figure:hover figcaption {
-//   -webkit-transition: opacity 0.3s;
-//   opacity: 1;
-// }

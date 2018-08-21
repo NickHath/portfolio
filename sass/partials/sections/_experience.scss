@@ -1,5 +1,16 @@
 .experience {
   grid-area: experience;
+  border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
+}
+.experience-details span {
+  display: inline-block;
+}
+.experience-details img {
+  width: 40%;
+  height: auto;
+}
+.experience-details article {
+  display: inline-block;
 }
 
 // DESKTOP STYLING

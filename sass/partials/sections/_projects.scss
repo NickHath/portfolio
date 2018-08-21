@@ -1,14 +1,13 @@
 .projects {
   grid-area: projects;
+  border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
 }
 a.project-url {
-  background-color: transparent;
   color: $highlight-red;
-  border: none;
 }
-a.project-url:visited {
-  color: $highlight-red-dark;
-}
+// a.project-url:visited {
+//   color: $highlight-red-dark;
+// }
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {

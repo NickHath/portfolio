@@ -3,7 +3,13 @@ html {
   height: 100vh;
   box-sizing: border-box;
 }
+// applies border-box sizing to all elements
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
+  // potentially fade in the entire body
+  // opacity: 0;
   width: 100%;
   font-family: $main-font;
   color: $font-color;
@@ -29,16 +35,21 @@ body {
                         'footer'
                         ;
 }
+// body.fade {
+//   transition: opacity 500ms linear 250ms;
+//   opacity: 1;
+// }
 .subsection {
   width: 100%;
   // border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  padding: 2em 0 2em 0;
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
+  padding: 3em 0 3em 0;
+  // padding-top: 3em;
+  // margin-bottom: 2em;
+  border-top: 2px solid;
 }
 // ratios from http://typecast.com/blog/a-more-modern-scale-for-web-typography
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.25em;
   font-weight: 300;
 }
@@ -47,6 +58,9 @@ h2 {
   line-height: 1.13636364em;
   font-weight: 300;
   opacity: 0.5;
+}
+h1.section-header {
+  margin: 0 0 0.5em 0.25em;
 }
 
 // makes sure images dont cause horizontal scrolling
@@ -58,15 +72,22 @@ img {
 a {
   text-decoration: none;
   color: $highlight-blue;
+}
+// a:visited {
+//   color: $highlight-blue-dark;
+// }
+
+a.button {
+  display: inline-block;
+  font-size: 1.25em;
+  color: $highlight-blue;
   border: 1px solid $highlight-blue;
   background-color: $highlight-blue-transparent;
-  padding: 0.125em;
+  padding: 0.5em;
+  margin: 0.75em 0 0.75em 0;
 }
-a:focus {
-  color: $highlight-red;
-  border: 1px solid $highlight-red;
-  background-color: $highlight-red-transparent;
-}
+// should make buttons turn red on mobile when they're tapped!
+
 
 /* DESKTOP STYLING */
 @media screen and (min-width: $tablet-breakpoint) {
@@ -103,9 +124,13 @@ a:focus {
     line-height: 1.25em;
   }
   a:hover {
+    color: $highlight-blue-dark;
+  }
+  a.button:hover {
     cursor: pointer;
     color: $highlight-red;
     border: 1px solid $highlight-red;
     background-color: $highlight-red-transparent;
   }
 }
+

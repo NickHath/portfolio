@@ -1,5 +1,9 @@
 footer {
   grid-area: footer;
+  // use same gray as text
+  background-color: $font-color;
+  color: white;
+  border: none;
 }
 
 // DESKTOP STYLING

@@ -1,7 +1,19 @@
 header.subsection {
+  // fix so the line is right below the view
+  height: 100vh;
   grid-area: header;
-  border-top: 5px solid;
-  border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
+  border-top: 10px solid $highlight-red;
+  padding: 1.5em 0 0 0 ;
+  border-image: none;
+}
+header.subsection:before {
+  content: "";
+  width: 100%;
+  border-top: 10px solid $highlight-blue;
+  position: absolute;
+  top: 10px;
+  // not 100% set on this box shadow for the topmost border...
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {

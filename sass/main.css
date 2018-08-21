@@ -72,6 +72,10 @@ html {
   box-sizing: border-box;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   width: 100%;
   font-family: "M PLUS 1p", "Muli", sans-serif;
@@ -88,13 +92,12 @@ body {
 
 .subsection {
   width: 100%;
-  padding: 2em 0 2em 0;
-  border-bottom: 2px solid;
-  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
+  padding: 3em 0 3em 0;
+  border-top: 2px solid;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.25em;
   font-weight: 300;
 }
@@ -106,6 +109,10 @@ h2 {
   opacity: 0.5;
 }
 
+h1.section-header {
+  margin: 0 0 0.5em 0.25em;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -114,15 +121,16 @@ img {
 a {
   text-decoration: none;
   color: #4FDCEF;
-  border: 1px solid #4FDCEF;
-  background-color: rgba(79, 220, 239, 0.15);
-  padding: 0.125em;
 }
 
-a:focus {
-  color: #EF514F;
-  border: 1px solid #EF514F;
-  background-color: rgba(239, 81, 79, 0.15);
+a.button {
+  display: inline-block;
+  font-size: 1.25em;
+  color: #4FDCEF;
+  border: 1px solid #4FDCEF;
+  background-color: rgba(79, 220, 239, 0.15);
+  padding: 0.5em;
+  margin: 0.75em 0 0.75em 0;
 }
 
 /* DESKTOP STYLING */
@@ -156,6 +164,10 @@ a:focus {
   }
 
   a:hover {
+    color: #0390A3;
+  }
+
+  a.button:hover {
     cursor: pointer;
     color: #EF514F;
     border: 1px solid #EF514F;
@@ -198,9 +210,20 @@ a:focus {
 }
 /* partials for each subsection */
 header.subsection {
+  height: 100vh;
   grid-area: header;
-  border-top: 5px solid;
-  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
+  border-top: 10px solid #EF514F;
+  padding: 1.5em 0 0 0;
+  border-image: none;
+}
+
+header.subsection:before {
+  content: "";
+  width: 100%;
+  border-top: 10px solid #4FDCEF;
+  position: absolute;
+  top: 10px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (min-width: 768px) {
@@ -210,58 +233,103 @@ header.subsection {
 }
 .skills {
   grid-area: skills;
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
 .icons {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 20%);
   justify-content: space-between;
+  align-content: space-between;
 }
 
 .icons figure {
-  width: 100%;
-  height: 100%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1.25em;
+  width: 60%;
+  height: auto;
 }
 
+@media screen and (min-width: 768px) {
+  .icons {
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, 50%);
+  }
+
+  .icons figure figcaption {
+    -webkit-transition: opacity 0.3s;
+    color: #8F8F8F;
+    opacity: 0;
+  }
+
+  .icons figure:hover figcaption {
+    -webkit-transition: opacity 0.3s;
+    opacity: 1;
+  }
+}
 .projects {
   grid-area: projects;
+  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
 a.project-url {
-  background-color: transparent;
   color: #EF514F;
-  border: none;
-}
-
-a.project-url:visited {
-  color: #A73837;
 }
 
 @media screen and (min-width: 768px) {
   a.project-url:hover {
-    color: #A73837;
+    color: #A30503;
   }
 }
 .experience {
   grid-area: experience;
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
+}
+
+.experience-details span {
+  display: inline-block;
+}
+
+.experience-details img {
+  width: 40%;
+  height: auto;
+}
+
+.experience-details article {
+  display: inline-block;
 }
 
 .education {
   grid-area: education;
+  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
+}
+
+.education-details {
+  margin-top: 2em;
+  text-align: center;
+}
+.education-details img {
+  margin-bottom: 0.25em;
 }
 
 .resume {
   grid-area: resume;
+  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
 .readings {
   grid-area: readings;
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
 footer {
   grid-area: footer;
+  background-color: #303030;
+  color: white;
+  border: none;
 }
 
 /* media breakpoints */
