@@ -1,7 +1,8 @@
 footer {
   grid-area: footer;
   // use same gray as text
-  background-color: $font-color;
+  // background-color: $font-color;
+  background-color: $highlight-blue;
   color: white;
   border: none;
 }
