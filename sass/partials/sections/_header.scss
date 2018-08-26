@@ -13,8 +13,49 @@ header.subsection:before {
   position: absolute;
   top: 10px;
   // not 100% set on this box shadow for the topmost border...
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(211, 94, 94, 0.2);
 }
+header {
+  .intro {
+    font-size: 1.375em;
+    // line-height: 1.25em;
+    line-height: 1.13636364em;
+    font-weight: 300;
+  }
+}
+
+// thank you to Naoya - https://codepen.io/nxworld/pen/OyRrGy
+.down-arrow {
+  -webkit-animation: arrow 1.5s infinite;
+  animation: arrow 1.5s infinite;
+}
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 1.5em);
+    opacity: 0;
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 1.5em);
+    opacity: 0;
+  }
+}
+
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
   header {

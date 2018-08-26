@@ -34,6 +34,8 @@ body {
                         'readings'
                         'footer'
                         ;
+  // prevent gray highlight on touch (iOS safari)
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 // body.fade {
 //   transition: opacity 500ms linear 250ms;
@@ -86,7 +88,14 @@ a.button {
   padding: 0.5em;
   margin: 0.75em 0 0.75em 0;
 }
-// should make buttons turn red on mobile when they're tapped!
+
+// makes buttons turn red when tapped on mobile or hovered over on desktop
+a.button:hover, a.button:active {
+  cursor: pointer;
+  color: $highlight-red;
+  border: 1px solid $highlight-red;
+  background-color: $highlight-red-transparent;
+}
 
 
 /* DESKTOP STYLING */
@@ -125,12 +134,6 @@ a.button {
   }
   a:hover {
     color: $highlight-blue-dark;
-  }
-  a.button:hover {
-    cursor: pointer;
-    color: $highlight-red;
-    border: 1px solid $highlight-red;
-    background-color: $highlight-red-transparent;
   }
 }
 

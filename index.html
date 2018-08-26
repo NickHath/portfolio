@@ -10,20 +10,39 @@
 <body class="fade">
   <!-- HEADER -->
   <header class="subsection">
+    <!-- <nav class="nav-modal">
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#readings">Readings</a>
+      <a href="#contact">Contact</a>
+    </nav> -->
     <h1>Nick Hathaway</h1>
     <h2>Software Developer</h2>
-    <!-- LOCATION???? -->
-    <p>Here is where my awesome bio would go. Man, I'm great. Hire me!</p>
+    <button id="hamburger-menu" class="hamburger hamburger--spring" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <section class="intro">
+      <p>Hello, I'm a software developer based in Salt Lake City, Utah.</p>
+      <p>Until recently, I was finishing up my B.A. in <a href="https://ling.yale.edu/academics/description-and-requirements-major" target="_blank">Computational Linguistics</a> at Yale University.</p>
+      <p>Now, I'm making web development more accessible as a mentor at <a href="https://devmountain.com/" target="_blank">DevMountain.</a></p>
+      <!-- <p>Programming is hard, but it's more fun to learn through collaboration.</p> -->
+    </section>
+
     <section class="social-links">
       <a class="button" href="https://www.linkedin.com/in/nick-hathaway/" target="_blank">LinkedIn</a>
       <a class="button" href="https://github.com/NickHath" target="_blank">GitHub</a>
       <a class="button" href="#" target="_blank">Email</a>
       <a class="button" href="#" target="_blank">Phone</a>
     </section>
+    <img src="./assets/my-icons/down_arrow.png" class="down-arrow" alt="down arrow"></img>
   </header>
 
   <!-- SKILLS -->
-  <section class="subsection skills">
+  <section id="skills" class="subsection skills">
     <h1 class="section-header">Skills</h1>
     <section class="icons">
 
@@ -71,7 +90,7 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="subsection projects">
+  <section id="projects" class="subsection projects">
     <h1 class="section-header">Projects</h1>  
     <section class="project-details">
       <section class="project-description">
@@ -89,7 +108,7 @@
             <section class="technologies red-icons">
               <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
             </section>
-            <a class="button" href="#" target="_blank">View Case Study</a>
+            <a class="button" href="./projects/date-idea-generator">View Case Study</a>
           </article>
         </article>
       </section>
@@ -110,7 +129,7 @@
             <section class="technologies blue-icons">
               <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
             </section>         
-            <a class="button" href="#" target="_blank">View Case Study</a>
+            <a class="button" href="./projects/bread-crumb/">View Case Study</a>
           </article>
         </article>
       </section>
@@ -131,7 +150,7 @@
             <section class="technologies red-icons">
               <i>React</i><i>Express</i><i>Cheerio</i>
             </section>
-            <a class="button" href="#" target="_blank">View Case Study</a>
+            <a class="button" href="./projects/peanut-gallery/">View Case Study</a>
           </article>
         </article>
       </section>
@@ -139,7 +158,7 @@
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="subsection experience">
+  <section id="experience" class="subsection experience">
       <h1 class="section-header">Experience</h1>   
       <section class="experience-details">
         <!-- span around image tags for easy resizing -->
@@ -215,7 +234,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section class="subsection education">
+  <section id="education" class="subsection education">
     <h1 class="section-header">Education</h1> 
     <section class="education-details">
       <img src="./assets/experience-education-icons/yaleicon.png" alt="Yale logo">
@@ -240,13 +259,13 @@
   </section>
 
   <!-- RESUME / CONTACT -->
-  <section class="subsection resume">
+  <section id="contact" class="subsection resume">
     <h1 class="section-header">Resume</h1> 
     <a class="button" href="./assets/files/Nick Hathaway resume.pdf" download>Download Resume</a>   
   </section>
 
   <!-- THINGS I'VE BEEN READING -->
-  <section class="subsection readings">
+  <section id="readings" class="subsection readings">
     <h1 class="section-header">Readings</h1>    
   </section>
 
@@ -295,8 +314,6 @@
   <!-- JQUERY -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <!-- Collapsible functionality -->
-  <script type="text/javascript" src="./js/collapsible.js"></script>
   <!-- Slick.js Package -->
   <!-- <script type="text/javascript" src="./packages/slick/slick.min.js"></script> -->
   <!-- <script type="text/javascript" src="./js/slickcarousel.js"></script> -->
@@ -310,6 +327,7 @@
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
   <script type="text/javascript" src="./js/svgscrolling.js"></script>
   <!-- Request script to Pocket API -->
+  <script type="text/javascript" src="./js/main.js"></script>
   <script type="text/javascript" src="./js/readings.js"></script>
 </body>
 </html>
