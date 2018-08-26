@@ -274,8 +274,29 @@ header.subsection:before {
   grid-area: projects;
   border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
+.projects .collapsible-toggle {
+  cursor: pointer;
+}
+.projects .collapsible-content {
+  display: none;
+}
+.projects .technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+.projects .technologies > i {
+  color: white;
+  padding: 0.25em;
+  border: 1px solid white;
+}
+.projects .technologies.red-icons > i {
+  background-color: #EF514F;
+}
+.projects .technologies.blue-icons > i {
+  background-color: #4FDCEF;
+}
 
-a.project-url {
+.project-url {
   color: #EF514F;
 }
 
@@ -287,6 +308,10 @@ a.project-url {
 .experience {
   grid-area: experience;
   border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
+}
+
+.experience-details {
+  padding-left: 2em;
 }
 
 .experience-details span {

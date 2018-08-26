@@ -2,6 +2,9 @@
   grid-area: experience;
   border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
 }
+.experience-details {
+  padding-left: 2em;
+}
 .experience-details span {
   display: inline-block;
 }

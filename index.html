@@ -59,10 +59,6 @@
         <img src="./assets/dev-icons/sass-original.svg" alt="SASS Icon" />
         <figcaption>SASS</figcaption>
       </figure>
-      <!-- <figure>
-        <img src="./assets/dev-icons/gulp-plain.svg" alt="Gulp Icon" />
-        <figcaption>Gulp</figcaption>
-      </figure> -->
       <figure>
         <img src="./assets/dev-icons/postgresql-original.svg" alt="Postgres Icon" />
         <figcaption>Postgres</figcaption>
@@ -71,97 +67,72 @@
         <img src="./assets/dev-icons/python-original.svg" alt="Python Icon" />
         <figcaption>Python</figcaption>
       </figure>
-      <!-- REDUX ICON NOT SIZING PROPERLY -->
-      <!-- <figure>
-        <img src="./assets/dev-icons/redux-original.svg" alt="Redux Icon" />
-        <figcaption>Redux</figcaption>
-      </figure> -->
     </section>
   </section>
 
-  <!-- PROJECTS - USE SLICK CAROUSEL!!! -->
+  <!-- PROJECTS -->
   <section class="subsection projects">
     <h1 class="section-header">Projects</h1>  
     <section class="project-details">
-      <section class="project-slideshow">
-        <!-- SLIDESHOW HERE -->
-      </section>
       <section class="project-description">
         <article>
           <h2>Date Idea Generator</h2>
+          <p>Randomizer for date locations using Yelp's API</p>
           <a href="#" target="_blank" class="project-url">http://dategen.io</a>
-          <p>Description: A site that allows users to randomly generate dates using Yelp's Fusion API. You can lock in specific locations or filter future searches by locking in their category, price, or type of food (for restaurants). Dates can be edited by others using a shareable link or immediately exported to GoogleMaps.</p>
-          <p>Technologies used: React, Redux, Node.js, Express, Massive.js, PostgresSQL, Yelp Fusion API v3, SASS, Material UI, Auth0</p>
-          <ul>
-            <li>Fully responsive design using Material UI components</li>
-            <li>Integrated with Yelp's Fusion v3 API to gather data local to a user's city</li>
-          </ul>
-          <!-- Case Study will have github link, video demo, write up, etc -->
-          <a class="button" href="#" target="_blank">View Case Study</a>
+          <!-- DESKTOP ONLY SLIDESHOWS -->
+          <section class="project-slideshow">
+              <!-- SLIDESHOW HERE -->
+          </section>
+          <img class="project-preview-photo" src="./assets/site-screenshots/dategen/date_gen_seans_video.png" alt="Date Idea Generator results page">
+          <p class="collapsible-toggle">Show Details</p>
+          <article class="collapsible-content">
+            <section class="technologies red-icons">
+              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
+            </section>
+            <a class="button" href="#" target="_blank">View Case Study</a>
+          </article>
         </article>
       </section>
     </section>
     <section class="project-details">
-        <section class="project-slideshow">
-          <section class="project-description">
-            <article>
-              <h2>BreadCrumb</h2>
-              <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
-              <p>Description: Using Twilio's API, I created a SMS-based scavenger hunt manager. Users can create, edit, and dispatch their hunts in a minimalistic dashboard. Participants only need to respond via text to join a hunt.</p>
-              <p>Technologies used: React, Redux, Node.js, Express, Massive.js, PostgresSQL, Twilio API, SASS, Material UI, Natural</p>
-              <ul>
-                <li>Awarded "Best Overall/Most Shippable" in my DevMountain cohort</li>
-                <li>Implemented a fuzzy comparison for scavenger hunt answers using a <a target="_blank" href="https://github.com/NaturalNode/natural">natural language processing package</a></li>
-                <li>Used Twilio's API to demo a SMS-based scavenger hunt with 20+ participants</li>
-              </ul>
-              <!-- Case study will have github link, video demo, write up, etc -->
-              <a class="button" href="#" target="_blank">View Case Study</a>
-            </article>
-            <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
+      <section class="project-description">
+        <article>
+          <h2>BreadCrumb</h2>
+          <p>SMS-based scavenger hunt manager</p>
+          <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
+          <!-- DESKTOP ONLY SLIDESHOWS -->
+          <section class="project-slideshow">
+              <!-- SLIDESHOW HERE -->
           </section>
-          <img src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
-          <img src="./assets/site-screenshots/breadcrumb/bc_dashboard.png" alt="BreadCrumb dashboard view">
-          <img src="./assets/site-screenshots/breadcrumb/bc_editor.png" alt="BreadCrumb editor view">
-          <img src="./assets/site-screenshots/breadcrumb/bc_history_hunt.png" alt="BreadCrumb scavenger hunt example">          
-        </section>
-        <section class="project-description">
-            <article>
-              <h2>BreadCrumb</h2>
-              <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
-              <p>Description: Using Twilio's API, I created a SMS-based scavenger hunt manager. Users can create, edit, and dispatch their hunts in a minimalistic dashboard. Participants only need to respond via text to join a hunt.</p>
-              <p>Technologies used: React, Redux, Node.js, Express, Massive.js, PostgresSQL, Twilio API, SASS, Material UI, Natural</p>
-              <ul>
-                <li>Awarded "Best Overall/Most Shippable" in my DevMountain cohort</li>
-                <li>Implemented a fuzzy comparison for scavenger hunt answers using a <a target="_blank" href="https://github.com/NaturalNode/natural">natural language processing package</a></li>
-                <li>Used Twilio's API to demo a SMS-based scavenger hunt with 20+ participants</li>
-              </ul>
-              <!-- Case study will have github link, video demo, write up, etc -->
-              <a class="button" href="#" target="_blank">View Case Study</a>
-            </article>
-        </section>
-    </section>
-    <section class="project-details">
-      <section class="project-slideshow">
-        <section class="project-description">
-          <article>
-            <h2>Peanut Gallery</h2>
-            <p>Description: An IMDb review web scraper. Results can be downloaded as HTML or TXT.</p>
-            <!-- Case study will have github link, video demo, write up, etc -->
+          <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
+          <p class="collapsible-toggle">Show Details</p>
+          <article class="collapsible-content">
+            <section class="technologies blue-icons">
+              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
+            </section>         
             <a class="button" href="#" target="_blank">View Case Study</a>
           </article>
-          <img class="project-preview-photo" src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="Peanut Gallery landing page">
-        </section>
-        <img src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="Peanut Gallery landing page">
-        <img src="./assets/site-screenshots/peanutgallery/pg_scraping_progress.png" alt="Peanut Gallery scraping progress">
-        <img src="./assets/site-screenshots/peanutgallery/pg_downloads.png" alt="Peanut Gallery download page">
-        <img src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="Peanut Gallery with reviews.txt">
+        </article>
       </section>
+    </section>
+    <section class="project-details">
       <section class="project-description">
         <article>
           <h2>Peanut Gallery</h2>
-          <p>Description: An IMDb review web scraper. Results can be downloaded as HTML or TXT.</p>
-          <!-- Case study will have github link, video demo, write up, etc -->
-          <a class="button" href="#" target="_blank">View Case Study</a>
+          <p>IMDb review web scraper that compiles all reviews for a movie as .html or .txt</p>
+          <p class="project-url">Not currently hosted</p>
+          <!-- DESKTOP ONLY SLIDESHOWS -->
+          <section class="project-slideshow">
+              <!-- SLIDESHOW HERE -->
+          </section>
+          <img src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="Peanut Gallery with reviews.txt">
+          <p class="collapsible-toggle">Show Details</p>
+          <article class="collapsible-content">
+            <section class="technologies red-icons">
+              <i>React</i><i>Express</i><i>Cheerio</i>
+            </section>
+            <a class="button" href="#" target="_blank">View Case Study</a>
+          </article>
         </article>
       </section>
     </section>
@@ -260,7 +231,7 @@
     <section class="education-details">
       <img src="./assets/experience-education-icons/famu.jpeg" alt="FAMU logo">
       <article>
-        <h2>FAMU (National Film and TV School of Prague)</h2>
+        <h2>FAMU (Film and TV School of Prague)</h2>
         <p>Summer 2015</p>
         <p>Prague, Czech Republic</p>
         <p>Certificate in Film Production</p>
@@ -324,6 +295,8 @@
   <!-- JQUERY -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Collapsible functionality -->
+  <script type="text/javascript" src="./js/collapsible.js"></script>
   <!-- Slick.js Package -->
   <!-- <script type="text/javascript" src="./packages/slick/slick.min.js"></script> -->
   <!-- <script type="text/javascript" src="./js/slickcarousel.js"></script> -->

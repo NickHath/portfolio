@@ -1,13 +1,32 @@
 .projects {
   grid-area: projects;
   border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
+  .collapsible-toggle {
+    cursor: pointer;
+  }
+  .collapsible-content {
+    // maybe no collapsible?
+    display: none;
+  }
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .technologies > i {
+    color: white;
+    padding: 0.25em;
+    border: 1px solid white;
+  }
+  .technologies.red-icons > i {
+    background-color: $highlight-red;
+  }
+  .technologies.blue-icons > i {
+    background-color: $highlight-blue;
+  }
 }
-a.project-url {
+.project-url {
   color: $highlight-red;
 }
-// a.project-url:visited {
-//   color: $highlight-red-dark;
-// }
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
@@ -15,22 +34,3 @@ a.project-url {
     color: $highlight-red-dark;
   }
 }
-
-// /* Preview image for slider */
-// .project-description {
-//   display: flex !important;
-//   align-items: center;
-// } 
-// .project-description article {
-//   padding-top: 10%;
-//   width: 40%;
-//   text-align: left;
-// }
-// .project-preview-photo {
-//   padding-top: 10%;
-//   width: 60%;
-//   display: inline;
-// }
-// .project-preview-photo img {
-//   width: 100%;
-// }
