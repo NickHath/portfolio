@@ -1,13 +1,6 @@
 .projects {
   grid-area: projects;
   border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
-  .collapsible-toggle {
-    cursor: pointer;
-  }
-  .collapsible-content {
-    // maybe no collapsible?
-    // display: none;
-  }
   .technologies {
     display: flex;
     flex-wrap: wrap;
@@ -17,12 +10,13 @@
     padding: 0.25em;
     border: 1px solid white;
   }
-  .technologies.red-icons > i {
+  // maybe just red icons by default
+  .technologies > i {
     background-color: $highlight-red;
   }
-  .technologies.blue-icons > i {
-    background-color: $highlight-blue;
-  }
+  // .technologies.blue-icons > i {
+  //   background-color: $highlight-blue;
+  // }
 }
 .project-url {
   color: $highlight-red;

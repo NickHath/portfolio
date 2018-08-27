@@ -10,14 +10,20 @@
 <body class="fade">
   <!-- HEADER -->
   <header class="subsection">
-    <!-- <nav class="nav-modal">
+    <nav class="nav-modal">
+      <!-- two separate hamburger menu buttons? -->
+      <!-- <button id="hamburger-menu" class="hamburger hamburger--spring is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button> -->
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
       <a href="#readings">Readings</a>
-      <a href="#contact">Contact</a>
-    </nav> -->
+      <p class="email">nicholashathaway@gmail.com</p>
+    </nav>
     <h1>Nick Hathaway</h1>
     <h2>Software Developer</h2>
     <button id="hamburger-menu" class="hamburger hamburger--spring" type="button">
@@ -42,7 +48,7 @@
   </header>
 
   <!-- SKILLS -->
-  <section id="skills" class="subsection skills">
+  <section id="skills" class="subsection skills fadein">
     <h1 class="section-header">Skills</h1>
     <section class="icons">
 
@@ -92,49 +98,43 @@
   <!-- PROJECTS -->
   <section id="projects" class="subsection projects">
     <h1 class="section-header">Projects</h1>  
-    <section class="project-details">
+    <section class="project-details fadein">
       <section class="project-description">
         <article>
           <h2>Date Idea Generator</h2>
-          <p>Randomizer for date locations using Yelp's API</p>
+          <p>Randomizer for date locations using Yelp's Fusion API</p>
           <a href="#" target="_blank" class="project-url">http://dategen.io</a>
           <!-- DESKTOP ONLY SLIDESHOWS -->
           <section class="project-slideshow">
               <!-- SLIDESHOW HERE -->
           </section>
           <img class="project-preview-photo" src="./assets/site-screenshots/dategen/date_gen_seans_video.png" alt="Date Idea Generator results page">
-          <p class="collapsible-toggle">Show Details</p>
-          <article class="collapsible-content">
-            <section class="technologies red-icons">
-              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
-            </section>
-            <a class="button" href="./projects/date-idea-generator">View Case Study</a>
-          </article>
+          <section class="technologies">
+            <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
+          </section>
+          <a class="button" href="./projects/date-idea-generator">View Case Study</a>
         </article>
       </section>
     </section>
-    <section class="project-details">
+    <section class="project-details fadein">
       <section class="project-description">
         <article>
           <h2>BreadCrumb</h2>
-          <p>SMS-based scavenger hunt manager</p>
+          <p>SMS-based scavenger hunts</p>
           <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
           <!-- DESKTOP ONLY SLIDESHOWS -->
           <section class="project-slideshow">
               <!-- SLIDESHOW HERE -->
           </section>
           <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
-          <p class="collapsible-toggle">Show Details</p>
-          <article class="collapsible-content">
-            <section class="technologies blue-icons">
-              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
-            </section>         
-            <a class="button" href="./projects/bread-crumb/">View Case Study</a>
-          </article>
+          <section class="technologies">
+            <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
+          </section>         
+          <a class="button" href="./projects/bread-crumb/">View Case Study</a>
         </article>
       </section>
     </section>
-    <section class="project-details">
+    <section class="project-details fadein">
       <section class="project-description">
         <article>
           <h2>Peanut Gallery</h2>
@@ -145,20 +145,17 @@
               <!-- SLIDESHOW HERE -->
           </section>
           <img src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="Peanut Gallery with reviews.txt">
-          <p class="collapsible-toggle">Show Details</p>
-          <article class="collapsible-content">
-            <section class="technologies red-icons">
-              <i>React</i><i>Express</i><i>Cheerio</i>
-            </section>
-            <a class="button" href="./projects/peanut-gallery/">View Case Study</a>
-          </article>
+          <section class="technologies">
+            <i>React</i><i>Express</i><i>Cheerio</i>
+          </section>
+          <a class="button" href="./projects/peanut-gallery/">View Case Study</a>
         </article>
       </section>
     </section>
   </section>
 
   <!-- EXPERIENCE -->
-  <section id="experience" class="subsection experience">
+  <section id="experience" class="subsection experience fadein">
       <h1 class="section-header">Experience</h1>   
       <section class="experience-details">
         <!-- span around image tags for easy resizing -->
@@ -179,6 +176,7 @@
         <article>
           <h2>DevMountain - Basecamp Mentor</h2>
           <h3>Jan. 2018 to May 2018</h3>
+          <!-- <p>Explaining programming concepts to new students </p> -->
           <!-- COMMENTS FROM FORMER STUDENTS??? -->
           <ul>
             <li>Awesome</li>
@@ -234,7 +232,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="subsection education">
+  <section id="education" class="subsection education fadein">
     <h1 class="section-header">Education</h1> 
     <section class="education-details">
       <img src="./assets/experience-education-icons/yaleicon.png" alt="Yale logo">

@@ -150,10 +150,10 @@ a.button:hover, a.button:active {
   body {
     line-height: 1.375em;
     grid-template-columns: 15% 15% 40% 15% 15%;
-    grid-template-rows: 10% 10% 20% 10% 10% 10% 10% 20%;
+    grid-template-rows: 10% 5% 30% 15% 10% 10% 10% 10%;
     grid-gap: none;
     /* all grid-areas are defined at the top of their respective scss partial */
-    grid-template-areas: "..... ..... header ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... ..... readings ..... ....." "..... ..... footer ..... .....";
+    grid-template-areas: "..... ..... header ..... ....." "..... ..... skills ..... ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... readings readings readings ....." "footer footer footer footer footer";
   }
 
   h1 {
@@ -173,6 +173,10 @@ a.button:hover, a.button:active {
 
   a:hover {
     color: #0390A3;
+  }
+
+  .subsection {
+    border: none;
   }
 }
 /* svg styling */
@@ -232,6 +236,31 @@ header .intro {
   line-height: 1.13636364em;
   font-weight: 300;
 }
+header nav.nav-modal {
+  position: fixed;
+  top: -10px;
+  z-index: 1;
+  height: calc(100vh + 10px);
+  width: 100%;
+  padding: 3em 2.5em 2.5em 2.5em;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: column;
+}
+header nav.nav-modal a, header nav.nav-modal .email {
+  padding-bottom: 1em;
+}
+header nav.nav-modal a {
+  color: #303030;
+  font-size: 1.75em;
+}
+header nav.nav-modal a:active {
+  color: #4FDCEF;
+}
+header nav.nav-modal .email {
+  font-size: 1.25em;
+  color: #EF514F;
+}
 
 .down-arrow {
   -webkit-animation: arrow 1.5s infinite;
@@ -267,6 +296,19 @@ header .intro {
 @media screen and (min-width: 768px) {
   header {
     padding-top: 50%;
+  }
+
+  header.subsection {
+    border-top: none;
+    padding: 0;
+  }
+
+  header.subsection:before {
+    content: none;
+  }
+
+  #hamburger-menu {
+    display: none;
   }
 }
 .skills {
@@ -312,9 +354,6 @@ header .intro {
   grid-area: projects;
   border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
-.projects .collapsible-toggle {
-  cursor: pointer;
-}
 .projects .technologies {
   display: flex;
   flex-wrap: wrap;
@@ -324,11 +363,8 @@ header .intro {
   padding: 0.25em;
   border: 1px solid white;
 }
-.projects .technologies.red-icons > i {
+.projects .technologies > i {
   background-color: #EF514F;
-}
-.projects .technologies.blue-icons > i {
-  background-color: #4FDCEF;
 }
 
 .project-url {

@@ -22,6 +22,38 @@ header {
     line-height: 1.13636364em;
     font-weight: 300;
   }
+  nav.nav-modal {
+    position: fixed;
+
+    // offset the top borders...
+    top: -10px;
+    z-index: 1;
+
+    // height doesn't work with safari iOS bottom nav!
+    height: calc(100vh + 10px);
+    width: 100%;
+    padding: 3em 2.5em 2.5em 2.5em;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    // link spacing
+    display: flex;
+    flex-direction: column;
+
+    a, .email {
+      padding-bottom: 1em;
+    }
+    a {
+      color: $font-color;
+      font-size: 1.75em;
+    }
+    a:active {
+      color: $highlight-blue;
+    }
+    .email {
+      font-size: 1.25em;
+      color: $highlight-red;
+    }
+  }
 }
 
 // thank you to Naoya - https://codepen.io/nxworld/pen/OyRrGy
@@ -60,5 +92,15 @@ header {
 @media screen and (min-width: $tablet-breakpoint) {
   header {
     padding-top: 50%;
+  }
+  header.subsection {
+    border-top: none;
+    padding: 0;
+  }
+  header.subsection:before {
+    content: none;
+  }
+  #hamburger-menu {
+    display: none;
   }
 }
