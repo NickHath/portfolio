@@ -3,6 +3,15 @@
   border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
   .article {
     color: $font-color;
+    .title {
+      font-weight: 700;
+    }
+    .article-url {
+      color: $highlight-red;
+    }
+    .article-url:hover {
+      color: $highlight-red-dark;
+    }
   }
 }
 

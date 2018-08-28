@@ -424,6 +424,15 @@ header nav.nav-modal .email {
 .readings .article {
   color: #303030;
 }
+.readings .article .title {
+  font-weight: 700;
+}
+.readings .article .title:hover {
+  cursor: pointer;
+}
+.readings .article .article-url {
+  color: #EF514F;
+}
 
 footer {
   grid-area: footer;

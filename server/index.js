@@ -4,6 +4,7 @@ const express = require('express')
     , cors = require('cors')
     , app = express();
 
+// using a sever will keep API Keys secure
 // body and config for Pocket post request    
 const body = {
   "consumer_key": process.env.POCKET_CONSUMER_KEY,
