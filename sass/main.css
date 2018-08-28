@@ -421,6 +421,9 @@ header nav.nav-modal .email {
   grid-area: readings;
   border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
+.readings .article {
+  color: #303030;
+}
 
 footer {
   grid-area: footer;
