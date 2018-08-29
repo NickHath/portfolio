@@ -9,13 +9,12 @@ $(document).ready(function() {
       for (var articleID in list) {
         const article = list[articleID];
         // <p>Read on ${moment(article.time_added).tz('America/Denver').format('MMMM Do, YYYY')}</p>
-
+        // <p>${article.excerpt}</p>
         htmlList += `
           <section class="article">
             <a class="title" href="${article.resolved_url}" target="_blank">${article.resolved_title}</a>
             <a class="article-url" href="${article.resolved_url}" target="_blank">${article.resolved_url.match(baseUrlRegExp)[0]}</a>
             <p>Read time: ${article.time_to_read} minutes</p>
-            <p>${article.excerpt}</p>
           </section>
         `
       }

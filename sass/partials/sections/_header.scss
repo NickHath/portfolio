@@ -22,6 +22,18 @@ header {
     line-height: 1.13636364em;
     font-weight: 300;
   }
+  section#header-nav {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      h1 {
+        font-size: 1.85em;
+      }
+      h2 {
+        font-size: 1.15em;
+      }
+    }
+  }
   nav.nav-modal {
     position: fixed;
 
@@ -32,18 +44,20 @@ header {
     // height doesn't work with safari iOS bottom nav!
     height: calc(100vh + 10px);
     width: 100%;
-    padding: 3em 2.5em 2.5em 2.5em;
+    padding: 2.5em 2.5em 2.5em 2.5em;
     background-color: rgba(255, 255, 255, 0.95);
 
     // link spacing
     display: flex;
     flex-direction: column;
 
+    // hidden by default
     display: none;
     a, .email {
       padding-bottom: 1em;
     }
     a {
+      display: block;
       color: $font-color;
       font-size: 1.75em;
     }
@@ -53,6 +67,12 @@ header {
     .email {
       font-size: 1.25em;
       color: $highlight-red;
+    }
+    #modal-hamburger-menu {
+      position: absolute;
+      top: 2.25em;
+      right: 0;
+      // right: 1.5em;
     }
   }
 }

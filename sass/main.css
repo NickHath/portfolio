@@ -236,13 +236,23 @@ header .intro {
   line-height: 1.13636364em;
   font-weight: 300;
 }
+header section#header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+header section#header-nav .name h1 {
+  font-size: 1.85em;
+}
+header section#header-nav .name h2 {
+  font-size: 1.15em;
+}
 header nav.nav-modal {
   position: fixed;
   top: -10px;
   z-index: 1;
   height: calc(100vh + 10px);
   width: 100%;
-  padding: 3em 2.5em 2.5em 2.5em;
+  padding: 2.5em 2.5em 2.5em 2.5em;
   background-color: rgba(255, 255, 255, 0.95);
   display: flex;
   flex-direction: column;
@@ -252,6 +262,7 @@ header nav.nav-modal a, header nav.nav-modal .email {
   padding-bottom: 1em;
 }
 header nav.nav-modal a {
+  display: block;
   color: #303030;
   font-size: 1.75em;
 }
@@ -261,6 +272,11 @@ header nav.nav-modal a:active {
 header nav.nav-modal .email {
   font-size: 1.25em;
   color: #EF514F;
+}
+header nav.nav-modal #modal-hamburger-menu {
+  position: absolute;
+  top: 2.25em;
+  right: 0;
 }
 
 .down-arrow {
@@ -427,16 +443,16 @@ header nav.nav-modal .email {
 .readings .article .title {
   font-weight: 700;
 }
-.readings .article .title:hover {
-  cursor: pointer;
-}
 .readings .article .article-url {
   color: #EF514F;
+}
+.readings .article .article-url:hover {
+  color: #A30503;
 }
 
 footer {
   grid-area: footer;
-  background-color: #4FDCEF;
+  background-color: #EF514F;
   color: white;
   border: none;
 }
