@@ -8,7 +8,7 @@ $(document).ready(function($) {
   $('#modal-hamburger-menu').click(function() {
     // $(this).toggleClass('is-active');
     $('#hamburger-menu').show(0);
-    $('.nav-modal').hide(250);
+    $('.nav-modal').hide(350);
   });
   $('.hash-link').click(function() {
     $('#hamburger-menu').show(0);

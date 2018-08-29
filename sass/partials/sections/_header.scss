@@ -27,10 +27,10 @@ header {
     justify-content: space-between;
     .name {
       h1 {
-        font-size: 1.85em;
+        // font-size: 1.85em;
       }
       h2 {
-        font-size: 1.15em;
+        // font-size: 1.15em;
       }
     }
   }
@@ -44,7 +44,7 @@ header {
     // height doesn't work with safari iOS bottom nav!
     height: calc(100vh + 10px);
     width: 100%;
-    padding: 2.5em 2.5em 2.5em 2.5em;
+    padding: 6.5em 2.5em 2.5em 2.5em;
     background-color: rgba(255, 255, 255, 0.95);
 
     // link spacing
@@ -70,7 +70,7 @@ header {
     }
     #modal-hamburger-menu {
       position: absolute;
-      top: 2.25em;
+      top: 2.5em;
       right: 0;
       // right: 1.5em;
     }
