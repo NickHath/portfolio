@@ -3,11 +3,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css?family=Muli");
-@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:100,300,400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+1p:300,700");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700");
-@import url("https://fonts.googleapis.com/css?family=Vidaloka");
-@import url("https://fonts.googleapis.com/css?family=Muli");
 @import '../packages/slick/slick.css';
 @import '../packages/slick/slick-theme.css';
 html, body, div, span, applet, object, iframe,
@@ -78,7 +75,7 @@ html {
 
 body {
   width: 100%;
-  font-family: "M PLUS 1p", "Muli", sans-serif;
+  font-family: "M PLUS 1p", sans-serif;
   color: #303030;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -95,6 +92,14 @@ body {
   width: 100%;
   padding: 3em 0 3em 0;
   border-top: 2px solid;
+}
+
+.red-blue-border {
+  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
+}
+
+.blue-red-border {
+  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
 h1 {
@@ -236,7 +241,7 @@ header .intro {
   line-height: 1.13636364em;
   font-weight: 300;
 }
-header section#header-nav {
+header #header-nav {
   display: flex;
   justify-content: space-between;
 }
@@ -324,7 +329,6 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .skills {
   grid-area: skills;
-  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
 .icons {
@@ -363,7 +367,6 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .projects {
   grid-area: projects;
-  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 .projects .technologies {
   display: flex;
@@ -389,7 +392,6 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .experience {
   grid-area: experience;
-  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 
 .experience-details {
@@ -411,7 +413,6 @@ header nav.nav-modal #modal-hamburger-menu {
 
 .education {
   grid-area: education;
-  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
 .education-details {
@@ -424,12 +425,10 @@ header nav.nav-modal #modal-hamburger-menu {
 
 .resume {
   grid-area: resume;
-  border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
 .readings {
   grid-area: readings;
-  border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
 }
 .readings .article {
   color: #303030;

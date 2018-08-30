@@ -1,6 +1,6 @@
 .readings {
   grid-area: readings;
-  border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
+  // border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
   .article {
     color: $font-color;
     .title {

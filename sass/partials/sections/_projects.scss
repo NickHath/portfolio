@@ -1,6 +1,6 @@
 .projects {
   grid-area: projects;
-  border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
+  // border-image: linear-gradient(to right, $highlight-blue 50%, $highlight-red 50%) 2;
   .technologies {
     display: flex;
     flex-wrap: wrap;
