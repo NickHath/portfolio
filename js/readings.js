@@ -5,7 +5,7 @@ $(document).ready(function() {
     .then(data => {
       const { list } = data;
       let htmlList = ``;
-      console.log(list);
+      // console.log(list);
       for (var articleID in list) {
         const article = list[articleID];
         // <p>Read on ${moment(article.time_added).tz('America/Denver').format('MMMM Do, YYYY')}</p>
