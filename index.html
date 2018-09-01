@@ -8,301 +8,427 @@
   <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body class="fade">
-  <!-- HEADER -->
-  <header class="subsection">
-    <nav class="nav-modal">
-      <!-- two separate hamburger menu buttons? -->
-      <button id="modal-hamburger-menu" class="hamburger hamburger--spring is-active" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <a class="hash-link" href="#skills">Skills</a>
-      <a class="hash-link" href="#projects">Projects</a>
-      <a class="hash-link" href="#experience">Experience</a>
-      <a class="hash-link" href="#education">Education</a>
-      <a class="hash-link" href="#readings">Readings</a>
-      <p class="email">nicholashathaway@gmail.com</p>
-    </nav>
-    <section id="header-nav">
-      <section class="name">
-        <h1>Nick Hathaway</h1>
-        <h2>Software Developer</h2>
+  <section class="landing">
+    <!-- HEADER -->
+    <header class="subsection">
+      <nav class="nav-modal">
+        <!-- two separate hamburger menu buttons? -->
+        <button id="modal-hamburger-menu" class="hamburger hamburger--spring is-active" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <a class="hash-link" href="#skills">Skills</a>
+        <a class="hash-link" href="#projects">Projects</a>
+        <a class="hash-link" href="#experience">Experience</a>
+        <a class="hash-link" href="#education">Education</a>
+        <a class="hash-link" href="#readings">Readings</a>
+        <p class="email">nicholashathaway@gmail.com</p>
+      </nav>
+      <section id="header-nav">
+        <section class="name">
+          <h1>Nick Hathaway</h1>
+          <h2>Software Developer</h2>
+        </section>
+        <button id="hamburger-menu" class="hamburger hamburger--spring" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </section>
-      <button id="hamburger-menu" class="hamburger hamburger--spring" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
+
+      <section class="intro">
+        <p>Hello, I'm a software developer based in Salt Lake City, Utah.</p>
+        <p>Until recently, I was finishing up my B.A. in <a href="https://ling.yale.edu/academics/description-and-requirements-major" target="_blank">Computational Linguistics</a> at Yale University.</p>
+        <p>Now, I'm making web development more accessible as a mentor at <a href="https://devmountain.com/" target="_blank">DevMountain.</a></p>
+        <!-- <p>Programming is hard, but it's more fun to learn through collaboration.</p> -->
+      </section>
+
+      <section class="social-links">
+        <a class="button" href="https://www.linkedin.com/in/nick-hathaway/" target="_blank">LinkedIn</a>
+        <a class="button" href="https://github.com/NickHath" target="_blank">GitHub</a>
+        <a class="button" href="#" target="_blank">Email</a>
+        <a class="button" href="#" target="_blank">Phone</a>
+      </section>
+      <img src="./assets/my-icons/down_arrow.png" class="down-arrow" alt="down arrow"></img>
+    </header>
+
+    <!-- SKILLS -->
+    <section id="skills" class="subsection red-blue-border skills fadein">
+      <h1 class="section-header">Skills</h1>
+      <section class="icons">
+
+        <figure>
+          <img src="./assets/dev-icons/nodejs-original.svg" alt="Node Icon" />
+          <figcaption>Node</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/react-original.svg" alt="React Icon" />
+          <figcaption>React</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/redux-original.svg" alt="Redux Icon" />
+          <figcaption>Redux</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/javascript-plain.svg" alt="JavaScript Icon" />
+          <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/html5-original.svg" alt="HTML5 Icon" />
+          <figcaption>HTML5</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/css3-original.svg" alt="CSS3 Icon" />
+          <figcaption>CSS3</figcaption>
+        </figure>
+        <!-- <figure>
+          <img src="./assets/dev-icons/git-original.svg" alt="Git Icon" />
+          <figcaption>Git</figcaption>
+        </figure> -->
+        <figure>
+          <img src="./assets/dev-icons/sass-original.svg" alt="SASS Icon" />
+          <figcaption>SASS</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/postgresql-original.svg" alt="Postgres Icon" />
+          <figcaption>Postgres</figcaption>
+        </figure>
+        <figure>
+          <img src="./assets/dev-icons/python-original.svg" alt="Python Icon" />
+          <figcaption>Python</figcaption>
+        </figure>
+      </section>
     </section>
 
-    <section class="intro">
-      <p>Hello, I'm a software developer based in Salt Lake City, Utah.</p>
-      <p>Until recently, I was finishing up my B.A. in <a href="https://ling.yale.edu/academics/description-and-requirements-major" target="_blank">Computational Linguistics</a> at Yale University.</p>
-      <p>Now, I'm making web development more accessible as a mentor at <a href="https://devmountain.com/" target="_blank">DevMountain.</a></p>
-      <!-- <p>Programming is hard, but it's more fun to learn through collaboration.</p> -->
+    <!-- PROJECTS -->
+    <section id="projects" class="subsection blue-red-border projects">
+      <h1 class="section-header">Projects</h1>  
+      <section class="project-details fadein">
+        <section class="project-description">
+          <article>
+            <h2>Date Idea Generator</h2>
+            <p>Randomizer for date locations using Yelp's Fusion API</p>
+            <a href="#" target="_blank" class="project-url">http://dategen.io</a>
+            <!-- DESKTOP ONLY SLIDESHOWS -->
+            <section class="project-slideshow">
+                <!-- SLIDESHOW HERE -->
+            </section>
+            <img class="project-preview-photo" src="./assets/site-screenshots/dategen/date_gen_seans_video.png" alt="Date Idea Generator results page">
+            <section class="technologies">
+              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
+            </section>
+            <a class="button" href="/date-idea-generator" spa-link>View Case Study</a>
+            <a class="button outline" href="#">Video Walkthrough</a>
+          </article>
+        </section>
+      </section>
+      <section class="project-details fadein">
+        <section class="project-description">
+          <article>
+            <h2>BreadCrumb</h2>
+            <p>SMS-based scavenger hunts</p>
+            <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
+            <!-- DESKTOP ONLY SLIDESHOWS -->
+            <section class="project-slideshow">
+                <!-- SLIDESHOW HERE -->
+            </section>
+            <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
+            <section class="technologies">
+              <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
+            </section>         
+            <a class="button" href="/bread-crumb" spa-link>View Case Study</a>
+            <a class="button" href="#">Video Walkthrough</a>
+          </article>
+        </section>
+      </section>
+      <section class="project-details fadein">
+        <section class="project-description">
+          <article>
+            <h2>Peanut Gallery</h2>
+            <p>IMDb review web scraper that compiles all reviews for a movie as .html or .txt</p>
+            <p class="project-url">Not currently hosted</p>
+            <!-- DESKTOP ONLY SLIDESHOWS -->
+            <section class="project-slideshow">
+                <!-- SLIDESHOW HERE -->
+            </section>
+            <img class="project-preview-photo" src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="Peanut Gallery with reviews.txt">
+            <section class="technologies">
+              <i>React</i><i>Express</i><i>Cheerio</i>
+            </section>
+            <a class="button" href="/peanut-gallery" spa-link>View Case Study</a>
+            <a class="button" href="#">Video Walkthrough</a>
+          </article>
+        </section>
+      </section>
+      <section class="project-details fadein">
+        <section class="project-description">
+          <article>
+            <h2>HackYale</h2>
+            <p>Student-run courses on web development and other topics.</p>
+            <!-- DESKTOP ONLY SLIDESHOWS -->
+            <section class="project-slideshow">
+                <!-- SLIDESHOW HERE -->
+            </section>
+            <img class="project-preview-photo" src="./assets/site-screenshots/hackyale/hackyaleslide.png" alt="Slides for HackYale">
+            <a class="button" href="/hack-yale" spa-link>View Case Study</a>
+            <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
+          </article>
+        </section>
+      </section>
     </section>
 
-    <section class="social-links">
-      <a class="button" href="https://www.linkedin.com/in/nick-hathaway/" target="_blank">LinkedIn</a>
-      <a class="button" href="https://github.com/NickHath" target="_blank">GitHub</a>
-      <a class="button" href="#" target="_blank">Email</a>
-      <a class="button" href="#" target="_blank">Phone</a>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="subsection red-blue-border experience fadein">
+        <h1 class="section-header">Experience</h1>   
+        <section class="experience-details">
+          <!-- span around image tags for easy resizing -->
+          <span><img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo"></span>
+          <article>
+            <h2>DevMountain - Web Immersive Mentor</h2>
+            <h3>Jan. 2018 to Present</h3>
+            <h3>Provo, UT</h3>
+            <p>Learning web development can be intimidating at first. As a mentor, I've had the opportunity to help new and experienced programmers learn the PERN (PostgreSQL, Express, React, Node) stack.</p>
+          </article>
+        </section> 
+        <section class="experience-details">
+          <span><img src="./assets/experience-education-icons/hackyale.png" alt="HackYale logo"></span>
+          <article>
+            <h2>HackYale - Instructor</h2>
+            <h3>Feb. 2014 to Jan. 2016</h3>
+            <h3>New Haven, CT</h3>
+            <p>I was lucky to work on a great team to create student-run courses on topics not covered by Yale's CS department. Together, we connected students with job opportunites and provided feedback to companies, including Facebook. I personally designed our course on <a href="https://www.nltk.org/" target="_blank">Python's Natural Language Toolkit.</a></p>
+            <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
+          </article>
+        </section>
+        <section class="experience-details">
+          <span><img src="./assets/experience-education-icons/fusionmediagroup.png" alt="Fusion Media Group logo"></span>
+          <article>
+            <h2>Fusion - Digital Intern</h2>
+            <h3>June 2014 - Sep. 2014</h3>
+            <h3>Miami, FL</h3>
+            <p>Before I got into software development, I was working towards a career in journalism. During this internship, I set up a network of YouTube channels while teaching myself video editing and SEO best practices. The channel now has ~275,000 subscribers and 100,000,000 channel views.</p>
+            <a class="button" href="https://www.youtube.com/user/thisisfusion" target="_blank">YouTube Channel</a>
+          </article>
+        </section>
+        <section class="experience-details">
+          <span><img src="./assets/experience-education-icons/hoffman.png" alt="Ruth Eckerd Hall logo"></span>
+          <article>
+            <h2>Project: Shattered Silence - Actor/Writer/Social Media Manager</h2>
+            <h3>Sep. 2010 - May 2013</h3>
+            <h3>Safety Harbor, FL</h3>
+            <p>I spent most of high school acting, writing, and managing this student-written theatre project's social media pages (Facebook, Tumblr, Kickstarter). In 2013, the project's director and I wrote a proposal which resulted in a PBS-WEDU documentary that was screened at 40+ film festivals and awarded <a href="https://suncoastchapter.org/" target="_blank">a regional Emmy Award.</a></p>
+            <a class="button" href="https://www.kickstarter.com/projects/1121299001/pbs-wedu-project-shattered-silence-documentary" target="_blank">Kickstarter Page</a>
+          </article>
+        </section>
     </section>
-    <img src="./assets/my-icons/down_arrow.png" class="down-arrow" alt="down arrow"></img>
-  </header>
 
-  <!-- SKILLS -->
-  <section id="skills" class="subsection red-blue-border skills fadein">
-    <h1 class="section-header">Skills</h1>
-    <section class="icons">
-
-      <figure>
-        <img src="./assets/dev-icons/nodejs-original.svg" alt="Node Icon" />
-        <figcaption>Node</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/react-original.svg" alt="React Icon" />
-        <figcaption>React</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/redux-original.svg" alt="Redux Icon" />
-        <figcaption>Redux</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/javascript-plain.svg" alt="JavaScript Icon" />
-        <figcaption>JavaScript</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/html5-original.svg" alt="HTML5 Icon" />
-        <figcaption>HTML5</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/css3-original.svg" alt="CSS3 Icon" />
-        <figcaption>CSS3</figcaption>
-      </figure>
-      <!-- <figure>
-        <img src="./assets/dev-icons/git-original.svg" alt="Git Icon" />
-        <figcaption>Git</figcaption>
-      </figure> -->
-      <figure>
-        <img src="./assets/dev-icons/sass-original.svg" alt="SASS Icon" />
-        <figcaption>SASS</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/postgresql-original.svg" alt="Postgres Icon" />
-        <figcaption>Postgres</figcaption>
-      </figure>
-      <figure>
-        <img src="./assets/dev-icons/python-original.svg" alt="Python Icon" />
-        <figcaption>Python</figcaption>
-      </figure>
+    <!-- EDUCATION -->
+    <section id="education" class="subsection blue-red-border education fadein">
+      <h1 class="section-header">Education</h1> 
+      <section class="education-details">
+        <img src="./assets/experience-education-icons/yaleicon.png" alt="Yale logo">
+        <article>
+          <!-- <h2>Yale University ('18)</h2> -->
+          <h2>Yale University</h2>
+          <p>2014 - 2018</p>
+          <p>New Haven, CT</p>
+          <p>B.A. in Computational Linguistics</p>
+          <a target="_blank" href="https://www.slideshare.net/NickHathaway1/nick-hathaway-senior-thesis-2018" class="button">Senior Thesis Slides</a>
+        </article>
+      </section>
+      <section class="education-details">
+        <img src="./assets/experience-education-icons/famu.jpeg" alt="FAMU logo">
+        <article>
+          <h2>FAMU (Film and TV School of Prague)</h2>
+          <p>Summer 2015</p>
+          <p>Prague, Czech Republic</p>
+          <p>Certificate in Film Production</p>
+        </article>
+      </section>
     </section>
+
+    <!-- RESUME / CONTACT -->
+    <section id="contact" class="subsection red-blue-border resume">
+      <h1 class="section-header">Resume</h1> 
+      <a class="button" href="./assets/files/Nick Hathaway resume.pdf" download>Download Resume</a>   
+    </section>
+
+    <!-- THINGS I'VE BEEN READING -->
+    <section id="readings" class="subsection blue-red-border readings">
+      <h1 class="section-header">Reading</h1> 
+      <p>I love to code and I love to read. Here are some of the articles I've enjoyed recently.</p>   
+      <section id="reading-list">
+
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="subsection">
+      <h1 class="section-header">Footer</h1>    
+      <p>Hey, you made it all the way down. Time for an easter egg. Here are some of my favorite bugs.</p>
+    </footer>
+
+    <!-- SVG BACKGROUND - should import from another file -->
+    <!-- <h2 class="test" style="margin-top:1200px;">Test Fade-In</h2> -->
+    <svg class="svg-bg" viewBox="0 0 100 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path class="svg-line inner-left" 
+            d="
+              M 10 0 
+              v 30
+              h 15
+            ">
+      </path>
+      <path class="svg-line outer-left" 
+            d="
+              M 5 0 
+              v 20
+              h 15 
+              v 20
+            ">
+      </path>
+
+      <path class="svg-line inner-right" 
+            d="
+              M 90 0 
+              v 30
+              h -15
+            ">
+      </path>
+      <path class="svg-line outer-right" 
+            d="
+              M 95 0 
+              v 20
+              h -15
+              v 20
+            ">
+      </path>
+    </svg>
   </section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="subsection blue-red-border projects">
-    <h1 class="section-header">Projects</h1>  
-    <section class="project-details fadein">
-      <section class="project-description">
-        <article>
-          <h2>Date Idea Generator</h2>
-          <p>Randomizer for date locations using Yelp's Fusion API</p>
-          <a href="#" target="_blank" class="project-url">http://dategen.io</a>
-          <!-- DESKTOP ONLY SLIDESHOWS -->
-          <section class="project-slideshow">
-              <!-- SLIDESHOW HERE -->
-          </section>
-          <img class="project-preview-photo" src="./assets/site-screenshots/dategen/date_gen_seans_video.png" alt="Date Idea Generator results page">
-          <section class="technologies">
-            <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Yelp Fusion API v3</i><i>SASS</i><i>Material UI</i><i>Auth0</i>
-          </section>
-          <a class="button" href="/date-idea-generator" spa-link>View Case Study</a>
-          <a class="button outline" href="#">Video Walkthrough</a>
-        </article>
-      </section>
-    </section>
-    <section class="project-details fadein">
-      <section class="project-description">
-        <article>
-          <h2>BreadCrumb</h2>
-          <p>SMS-based scavenger hunts</p>
-          <a href="#" target="_blank" class="project-url">http://breadcrumbproject.com</a>
-          <!-- DESKTOP ONLY SLIDESHOWS -->
-          <section class="project-slideshow">
-              <!-- SLIDESHOW HERE -->
-          </section>
-          <img class="project-preview-photo" src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb login page">
-          <section class="technologies">
-            <i>React</i><i>Redux</i><i>Node.js</i><i>Express</i><i>Massive.js</i><i>PostgresSQL</i><i>Twilio API</i><i>SASS</i><i>Material UI</i><i>Natural</i>
-          </section>         
-          <a class="button" href="/bread-crumb" spa-link>View Case Study</a>
-          <a class="button" href="#">Video Walkthrough</a>
-        </article>
-      </section>
-    </section>
-    <section class="project-details fadein">
-      <section class="project-description">
-        <article>
-          <h2>Peanut Gallery</h2>
-          <p>IMDb review web scraper that compiles all reviews for a movie as .html or .txt</p>
-          <p class="project-url">Not currently hosted</p>
-          <!-- DESKTOP ONLY SLIDESHOWS -->
-          <section class="project-slideshow">
-              <!-- SLIDESHOW HERE -->
-          </section>
-          <img class="project-preview-photo" src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="Peanut Gallery with reviews.txt">
-          <section class="technologies">
-            <i>React</i><i>Express</i><i>Cheerio</i>
-          </section>
-          <a class="button" href="/peanut-gallery" spa-link>View Case Study</a>
-          <a class="button" href="#">Video Walkthrough</a>
-        </article>
-      </section>
-    </section>
-    <section class="project-details fadein">
-      <section class="project-description">
-        <article>
-          <h2>HackYale</h2>
-          <p>Student-run courses on web development and other topics.</p>
-          <!-- DESKTOP ONLY SLIDESHOWS -->
-          <section class="project-slideshow">
-              <!-- SLIDESHOW HERE -->
-          </section>
-          <img class="project-preview-photo" src="./assets/site-screenshots/hackyale/hackyaleslide.png" alt="Slides for HackYale">
-          <a class="button" href="/hack-yale" spa-link>View Case Study</a>
-          <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
-        </article>
-      </section>
-    </section>
-  </section>
-
-  <!-- EXPERIENCE -->
-  <section id="experience" class="subsection red-blue-border experience fadein">
-      <h1 class="section-header">Experience</h1>   
-      <section class="experience-details">
-        <!-- span around image tags for easy resizing -->
-        <span><img src="./assets/experience-education-icons/devmtn.png" alt="DevMountain logo"></span>
-        <article>
-          <h2>DevMountain - Web Immersive Mentor</h2>
-          <h3>Jan. 2018 to Present</h3>
-          <h3>Provo, UT</h3>
-          <p>Learning web development can be intimidating at first. As a mentor, I've had the opportunity to help new and experienced programmers learn the PERN (PostgreSQL, Express, React, Node) stack.</p>
-        </article>
-      </section> 
-      <section class="experience-details">
-        <span><img src="./assets/experience-education-icons/hackyale.png" alt="HackYale logo"></span>
-        <article>
-          <h2>HackYale - Instructor</h2>
-          <h3>Feb. 2014 to Jan. 2016</h3>
-          <h3>New Haven, CT</h3>
-          <p>I was lucky to work on a great team to create student-run courses on topics not covered by Yale's CS department. Together, we connected students with job opportunites and provided feedback to companies, including Facebook. I personally designed our course on <a href="https://www.nltk.org/" target="_blank">Python's Natural Language Toolkit.</a></p>
-          <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
-        </article>
-      </section>
-      <section class="experience-details">
-        <span><img src="./assets/experience-education-icons/fusionmediagroup.png" alt="Fusion Media Group logo"></span>
-        <article>
-          <h2>Fusion - Digital Intern</h2>
-          <h3>June 2014 - Sep. 2014</h3>
-          <h3>Miami, FL</h3>
-          <p>Before I got into software development, I was working towards a career in journalism. During this internship, I set up a network of YouTube channels while teaching myself video editing and SEO best practices. The channel now has ~275,000 subscribers and 100,000,000 channel views.</p>
-          <a class="button" href="https://www.youtube.com/user/thisisfusion" target="_blank">YouTube Channel</a>
-        </article>
-      </section>
-      <section class="experience-details">
-        <span><img src="./assets/experience-education-icons/hoffman.png" alt="Ruth Eckerd Hall logo"></span>
-        <article>
-          <h2>Project: Shattered Silence - Actor/Writer/Social Media Manager</h2>
-          <h3>Sep. 2010 - May 2013</h3>
-          <h3>Safety Harbor, FL</h3>
-          <p>I spent most of high school acting, writing, and managing this student-written theatre project's social media pages (Facebook, Tumblr, Kickstarter). In 2013, the project's director and I wrote a proposal which resulted in a PBS-WEDU documentary that was screened at 40+ film festivals and awarded <a href="https://suncoastchapter.org/" target="_blank">a regional Emmy Award.</a></p>
-          <a class="button" href="https://www.kickstarter.com/projects/1121299001/pbs-wedu-project-shattered-silence-documentary" target="_blank">Kickstarter Page</a>
-        </article>
-      </section>
-  </section>
-
-  <!-- EDUCATION -->
-  <section id="education" class="subsection blue-red-border education fadein">
-    <h1 class="section-header">Education</h1> 
-    <section class="education-details">
-      <img src="./assets/experience-education-icons/yaleicon.png" alt="Yale logo">
+  <!-- BREAD CRUMB CASE STUDY -->
+  <section class="bread-crumb case-study">
+    <section class="description">
+      <img src="./assets/site-screenshots/breadcrumb/bc_login.png" alt="BreadCrumb landing page">
+      <h1>Description</h1>
       <article>
-        <!-- <h2>Yale University ('18)</h2> -->
-        <h2>Yale University</h2>
-        <p>2014 - 2018</p>
-        <p>New Haven, CT</p>
-        <p>B.A. in Computational Linguistics</p>
-        <a target="_blank" href="https://www.slideshare.net/NickHathaway1/nick-hathaway-senior-thesis-2018" class="button">Senior Thesis Slides</a>
+        <p>BreadCrumb is a simple dashboard for creating and managing scavenger hunts. I created it while I was a student at DevMountain. Working every day for two weeks, I was able to get a working MVP that I demoed to my classmates and instructors.</p>
       </article>
     </section>
-    <section class="education-details">
-      <img src="./assets/experience-education-icons/famu.jpeg" alt="FAMU logo">
+    <section class="motivation">
+      <img src="./assets/site-screenshots/breadcrumb/bc_dashboard.png" alt="">
+      <h1>Motivation</h1>
       <article>
-        <h2>FAMU (Film and TV School of Prague)</h2>
-        <p>Summer 2015</p>
-        <p>Prague, Czech Republic</p>
-        <p>Certificate in Film Production</p>
+        <p>I wanted to make sure that potential users could participate in a scavenger hunts without creating an account through my website. That’s when I decided to use Twilio to dispatch the hunts via text. </p>
+      </article>
+    </section>
+    <section class="planning">
+      <img src="./assets/site-screenshots/breadcrumb/bc_history_hunt.png" alt="">
+      <h1>Planning</h1>
+      <article>
+        <p>Planning details go here</p>
+      </article>
+    </section>
+    <section class="outcomes">
+      <img src="./assets/site-screenshots/breadcrumb/bc_editor.png" alt="">
+      <h1>Outcomes</h1>
+      <a href="#" class="button">Live Site</a>
+      <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+      <article>
+        <p>Demo scavenger hunt to 20+ participants. Awarded Best Overall/Most Shippable.</p>
+      </article>
+    </section>
+    <section class="reflection">
+      <h1>Reflection</h1>
+      <article>
+        <p>Might be better as a react app</p>
       </article>
     </section>
   </section>
 
-  <!-- RESUME / CONTACT -->
-  <section id="contact" class="subsection red-blue-border resume">
-    <h1 class="section-header">Resume</h1> 
-    <a class="button" href="./assets/files/Nick Hathaway resume.pdf" download>Download Resume</a>   
+  <!-- DATE IDEA GENERATOR CASE STUDY -->
+  <section class="date-idea-generator case-study">
+    <p>Date Night</p>
   </section>
-
-  <!-- THINGS I'VE BEEN READING -->
-  <section id="readings" class="subsection blue-red-border readings">
-    <h1 class="section-header">Reading</h1> 
-    <p>I love to code and I love to read. Here are some of the articles I've enjoyed recently.</p>   
-    <section id="reading-list">
-
+  
+  <!-- PEANUT GALLERY CASE STUDY -->
+  <section class="peanut-gallery case-study">
+    <section class="description">
+      <img src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="Peanut Gallery landing page">
+      <h1>Description</h1>
+      <article>
+        <p>Peanut Gallery is a web scraper I created to compile all the IMDb reviews for a given movie title. It allows users to download reviews as a .txt or .html file.</p>
+      </article>
+    </section>
+    <section class="motivation">
+      <img src="./assets/site-screenshots/peanutgallery/pg_downloads.png" alt="">
+      <h1>Motivation</h1>
+      <article>
+        <p>I’m fascinated with how natural language corpora are created… I wanted to take a stab at creating my own. </p>
+      </article>
+    </section>
+    <section class="planning">
+      <img src="./assets/site-screenshots/peanutgallery/pg_review_file.png" alt="">
+      <h1>Planning</h1>
+      <article>
+        <p>Planning details go here</p>
+      </article>
+    </section>
+    <section class="outcomes">
+      <h1>Outcomes</h1>
+      <a href="#" class="button">Live Site</a>
+      <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+      <article>
+        <p>Reworked the back-end code for my senior thesis. I also rewrote the scraper using Clojure</p>
+      </article>
+    </section>
+    <section class="reflection">
+      <h1>Reflection</h1>
+      <article>
+        <p>...</p>
+      </article>
     </section>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="subsection">
-    <h1 class="section-header">Footer</h1>    
-    <p>Hey, you made it all the way down. Time for an easter egg. Here are some of my favorite bugs.</p>
-  </footer>
+  <!-- HACKYALE CASE STUDY -->
+  <section class="hack-yale case-study">
+    <section class="description">
+      <img src="./assets/site-screenshots/hackyale/hackyaleslide.png" alt="HackYale slide">
+      <h1>Description</h1>
+      <article>
+        <p>When I was on the HackYale team, we taught courses on everything from C++ to web development and design. I decided to develop my own three-week course on Natural Language Processing using the Python Natural Language Toolkit.</p>
+      </article>
+    </section>
+    <section class="motivation">
+      <img src="./assets/site-screenshots/hackyale/hackyaleslide.png" alt="HackYale slide">
+      <h1>Motivation</h1>
+      <article>
+        <p>Yale’s CS department focuses on fundament topics in C and LISP. When HackYale was founded in 2013, there was a desire on campus for courses on additional topics outside the scope of the major. Specifically, there was a strong need for web development courses (our web dev course had XXXXX applicants for XXXX spots, and was consistently the most popular of our course selections).</p>
+      </article>
+    </section>
+    <section class="planning">
+      <img src="./assets/site-screenshots/hackyale/hackyaleslide.png" alt="HackYale slide">
+      <h1>Planning</h1>
+      <article>
+        <p>Jurafsky and Martin book Coursera MOOC (Andrew Ng) NLTK docs Course I had taken (LING 227)</p>
+      </article>
+    </section>
+    <section class="outcomes">
+      <h1>Outcomes</h1>
+      <a href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" class="button" target="_blank">View Slides</a>
+      <article>
+        <p>I taught my class to a group of CS students, an MBA from the Yale School of Management, and a PhD student in Astrophysics who wanted to retool as a Data Scientist. Over the course of three weeks, we covered corpus manipulation and analysis, n-gram language models, naive bayes text classification, and concluded by categorizing a dataset of Reuters articles using a model we built with the XXXXX corpus.</p>
+      </article>
+    </section>
+    <section class="reflection">
+      <h1>Reflection</h1>
+      <article>
+        <p>Is part of why I wanted to be a mentor at DevMtn.</p>
+      </article>
+    </section>
+  </section>
+    
 
-  <!-- SVG BACKGROUND - should import from another file -->
-  <!-- <h2 class="test" style="margin-top:1200px;">Test Fade-In</h2> -->
-  <svg class="svg-bg" viewBox="0 0 100 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path class="svg-line inner-left" 
-          d="
-            M 10 0 
-            v 30
-            h 15
-          ">
-    </path>
-    <path class="svg-line outer-left" 
-          d="
-            M 5 0 
-            v 20
-            h 15 
-            v 20
-          ">
-    </path>
-
-    <path class="svg-line inner-right" 
-          d="
-            M 90 0 
-            v 30
-            h -15
-          ">
-    </path>
-    <path class="svg-line outer-right" 
-          d="
-            M 95 0 
-            v 20
-            h -15
-            v 20
-          ">
-    </path>
-  </svg>
 
   <!-- SCRIPTS -->
   <!-- JQUERY -->

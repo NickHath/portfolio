@@ -74,18 +74,21 @@ html {
 }
 
 body {
-  width: 100%;
   font-family: "M PLUS 1p", sans-serif;
   color: #303030;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1em;
   line-height: 1.25em;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.landing {
+  width: 100%;
   display: grid;
   grid-gap: 0;
   /* all grid-areas are defined at the top of their respective scss partial */
   grid-template-areas: "header" "skills" "projects" "experience" "education" "resume" "readings" "footer";
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .subsection {
@@ -154,6 +157,9 @@ a.button:hover, a.button:active {
 
   body {
     line-height: 1.375em;
+  }
+
+  .landing {
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-template-rows: 10% 5% 30% 15% 10% 10% 10% 10%;
     grid-gap: none;
@@ -452,6 +458,11 @@ footer {
 
 /* media breakpoints */
 /* hide svg animation on screens smaller than 700px wide */
+.case-study {
+  width: 100vw;
+  display: none;
+}
+
 /* third-party styling */
 /*!
  * Hamburgers
