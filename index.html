@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body class="fade">
-
+  <!-- <a href="#education" spa-hash-link>Test SPA hash link</a> -->
   <section class="landing">
     <!-- HEADER -->
     <header class="subsection">
@@ -146,6 +146,21 @@
       <section class="project-details fadein">
         <section class="project-description">
           <article>
+            <h2>HackYale</h2>
+            <p>Student-run courses on web development and other topics.</p>
+            <!-- DESKTOP ONLY SLIDESHOWS -->
+            <section class="project-slideshow">
+                <!-- SLIDESHOW HERE -->
+            </section>
+            <img class="project-preview-photo" src="./assets/site-screenshots/hackyale/hackyale_slide.png" alt="Slides for HackYale">
+            <a class="button" href="/hack-yale" spa-link>View Case Study</a>
+            <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
+          </article>
+        </section>
+      </section>
+      <section class="project-details fadein">
+        <section class="project-description">
+          <article>
             <h2>Peanut Gallery</h2>
             <p>IMDb review web scraper that compiles all reviews for a movie as .html or .txt</p>
             <p class="project-url">Not currently hosted</p>
@@ -159,21 +174,6 @@
             </section>
             <a class="button" href="/peanut-gallery" spa-link>View Case Study</a>
             <a class="button" href="#">Video Walkthrough</a>
-          </article>
-        </section>
-      </section>
-      <section class="project-details fadein">
-        <section class="project-description">
-          <article>
-            <h2>HackYale</h2>
-            <p>Student-run courses on web development and other topics.</p>
-            <!-- DESKTOP ONLY SLIDESHOWS -->
-            <section class="project-slideshow">
-                <!-- SLIDESHOW HERE -->
-            </section>
-            <img class="project-preview-photo" src="./assets/site-screenshots/hackyale/hackyale_slide.png" alt="Slides for HackYale">
-            <a class="button" href="/hack-yale" spa-link>View Case Study</a>
-            <a class="button" href="https://www.slideshare.net/NickHathaway1/hackyale-natural-language-processing-all-slides" target="_blank">View Slides</a>
           </article>
         </section>
       </section>
@@ -336,7 +336,7 @@
       <h1>Outcomes</h1>
       <article>
         <p>Demo scavenger hunt to 20+ participants. Awarded Best Overall/Most Shippable.</p>
-        <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <a href="http://www.breadcrumbproject.com" class="button">Live Site</a>
       </article>
     </section>
@@ -371,7 +371,7 @@
       <h1>Outcomes</h1>
       <article>
         <p>Outcomes go here</p>
-        <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <a href="http://www.dateideagenerator.com" class="button">Live Site</a>
       </article>
     </section>
@@ -385,31 +385,33 @@
     <section class="description">
       <h1>Description</h1>
       <article>
-        <p>Peanut Gallery is a web scraper I created to compile all the IMDb reviews for a given movie title. It allows users to download reviews as a .txt or .html file.</p>
+        <p>Peanut Gallery is a web scraper that I created to compile IMDb reviews for any given movie. After scraping all of the reviews for an IMDb title, the site makes them available for download as a single .txt or .html file.</p>
       </article>
-      <img src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="Peanut Gallery landing page">
+      <img src="./assets/site-screenshots/peanutgallery/pg_landing.png" alt="">
     </section>
     <section class="motivation">
       <h1>Motivation</h1>
       <article>
-        <p>I’m fascinated with how natural language corpora are created… I wanted to take a stab at creating my own. </p>
+        <p>I wanted to learn more about how natural language corpora are built. Before making this site, I noticed that movie reviews have become a popular source of data for sentiment analysis because they are often opinionated and already labeled with ratings (usually on a scale from 1-5 or 1-10). Since I couldn’t find an API for user-generated movie reviews, I decided to scrape them myself.</p>
       </article>
-      <img src="./assets/site-screenshots/peanutgallery/pg_downloads.png" alt="">
     </section>
+    <img src="./assets/site-screenshots/peanutgallery/imdb_bladerunner.png" alt="Peanut Gallery landing page">
     <section class="planning">
       <h1>Planning</h1>
       <article>
-        <p>Planning details go here</p>
+        <p>My first step was to convert movie titles to IMDb ID’s. I decided to use the <a href=“http://www.omdbapi.com/“ target=“_blank”>Open Movie Database API.</a> After that, I had a lot of fun figuring out the best way to scrape reviews from IMDb.</p>
+        <p>At first, I parsed the HTML from each review page using <a href=“https://cheerio.js.org/” target=“_blank”>a library called Cheerio.</a> However, while I was in the process of building my scraper, IMDb went through a total site redesign that broke it. After I discovered that I could access the AJAX for the reviews by changing my request URL, I changed my approach. Using AJAX instead of scraping their HTML, which was prone to change, made my scraper resilient to any future IMDb redesigns.</p>
       </article>
       <!-- IMG OF IMDB HERE!!! -->
-      <img src="" alt="">
+      <img src="./assets/site-screenshots/peanutgallery/imdb_reviews_both_formats.png" alt="">
     </section>
     <section class="outcomes">
       <h1>Outcomes</h1>
-      <a href="#" class="button">Video Walkthrough</a>
-      <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
       <article>
-        <p>Reworked the back-end code for my senior thesis. I also rewrote the scraper using Clojure</p>
+        <p>Scraping all the reviews for a single movie title was my first step towards building a corpus. At one point, I re-wrote the scraper in Clojure, which gave me a better understanding of my code and of functional programming principles. Eventually, I re-worked the code to build a corpus of 1.5 million reviews across five movie genres (animation, comedy, documentary, horror, and romance).</p>
+        <p>Eventually, I’d like to support JSON downloads to make the reviews more structured. I’d also like to allow users to upload a list of movie titles and download a single file with all the reviews labeled by movie.</p>
+        <p>Peanut Gallery is not currently available online. But you can see the results of my journeys into web scraping in the slides below.</p>
+        <a href="#" class="button">Senior Thesis Slides</a>
       </article>
     </section>
   </section>
@@ -428,7 +430,8 @@
     <section class="motivation">
       <h1>Motivation</h1>
       <article>
-        <p>Yale’s Computer Science department focuses on fundamental topics in C and LISP. When HackYale was founded in 2011, there was a desire on campus for courses on additional topics outside the scope of the major. Specifically, there was a strong need for courses in web development and high-level programming languages. In fact, our <a href=“https://github.com/hackyale/Web-Development-101” target=“_blank”>Introduction to Web Development course</a> regularly had 200+ applicants for ~30 spots.</p>
+        <p>Yale’s Computer Science department focuses on fundamental topics in C and LISP. When HackYale was founded in 2011, there was a desire on campus for courses on additional topics outside the scope of the major.</p>
+        <p>Specifically, there was a strong need for courses in web development and high-level programming languages. In fact, our <a href=“https://github.com/hackyale/Web-Development-101” target=“_blank”>Introduction to Web Development course</a> regularly had 200+ applicants for ~30 spots.</p>
       </article>
       <img src="./assets/site-screenshots/hackyale/ceid_building.jpg" alt="HackYale slide">
     </section>
