@@ -30,17 +30,21 @@ $(document).ready(function() {
   // '/date-idea-generator': () => { $('body').load('../templates/date-idea-generator.html', initRoutes)},
 
   // depending on url, hide and show correct sections of html
+  let yCoordLanding = window.pageYOffset;
   function navigate() {
+    // update landing page's y offset
+    yCoordLanding = window.pageYOffset;
+    
     const path = window.location.pathname;
     const routes = {
       // hide whichever case-study is visible
-      '/': () => { $('.case-study').hide(); $('.landing').show(); },
+      '/': () => { $('.case-study').hide(); $('.landing').show(); window.scrollTo(0, yCoordLanding); },
 
       // for case study routes, hide the landing and show that specific view
-      '/date-idea-generator': () => { $('.landing').hide(); $('.date-idea-generator').show(); },
-      '/bread-crumb': () => { $('.landing').hide(); $('.bread-crumb').show(); },
-      '/peanut-gallery': () => { $('.landing').hide(); $('.peanut-gallery').show(); },
-      '/hack-yale': () => { $('.landing').hide(); $('.hack-yale').show(); }
+      '/date-idea-generator': () => { $('.landing').hide(); $('.date-idea-generator').show(); window.scrollTo(0, 0); },
+      '/bread-crumb': () => { $('.landing').hide(); $('.bread-crumb').show(); window.scrollTo(0, 0); },
+      '/peanut-gallery': () => { $('.landing').hide(); $('.peanut-gallery').show(); window.scrollTo(0, 0); },
+      '/hack-yale': () => { $('.landing').hide(); $('.hack-yale').show(); window.scrollTo(0, 0); }
     };
     routes[path]();
   }
