@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body class="fade">
-  <!-- <a href="#education" spa-hash-link>Test SPA hash link</a> -->
+  <a href="#experience" spa-hash-link>Test SPA hash link</a>
   <section class="landing">
     <!-- HEADER -->
     <header class="subsection">
@@ -19,11 +19,11 @@
             <span class="hamburger-inner"></span>
           </span>
         </button>
-        <a class="hash-link" href="#skills">Skills</a>
-        <a class="hash-link" href="#projects">Projects</a>
-        <a class="hash-link" href="#experience">Experience</a>
-        <a class="hash-link" href="#education">Education</a>
-        <a class="hash-link" href="#readings">Readings</a>
+        <a class="hash-link" href="#skills" spa-hash-link>Skills</a>
+        <a class="hash-link" href="#projects" spa-hash-link>Projects</a>
+        <a class="hash-link" href="#experience" spa-hash-link>Experience</a>
+        <a class="hash-link" href="#education" spa-hash-link>Education</a>
+        <a class="hash-link" href="#readings" spa-hash-link>Readings</a>
         <p class="email">nicholashathaway@gmail.com</p>
       </nav>
       <section id="header-nav">
@@ -266,8 +266,8 @@
 
     <!-- FOOTER -->
     <footer class="subsection">
-      <h1 class="section-header">Footer</h1>    
-      <p>Hey, you made it all the way down. Time for an easter egg. Here are some of my favorite bugs.</p>
+      <!-- <h1 class="section-header">Footer</h1>     -->
+      <!-- <p>Hey, you made it all the way down. Time for an easter egg. Here are some of my favorite bugs.</p> -->
     </footer>
 
     <!-- SVG BACKGROUND - should import from another file -->
@@ -314,28 +314,34 @@
     <section class="description">
       <h1>Description</h1>
       <article>
-        <p>BreadCrumb is a simple dashboard for creating and managing scavenger hunts. I created it while I was a student at DevMountain. Working every day for two weeks, I was able to get a working MVP that I demoed to my classmates and instructors.</p>
+        <p>BreadCrumb is a simple dashboard for creating and managing scavenger hunts. It allows anyone to dispatch scavenger hunts to participants using just their phone numbers. I thought that it was important to keep the barrier for participating in hunts as low as possible, so I used <a href="https://www.twilio.com/sms" target="_blank">Twilio’s SMS API</a> to coordinate hunts after they were created in the dashboard. In other words, potential users can participate in scavenger hunts without creating an account.</p>
       </article>
       <img src="./assets/site-screenshots/breadcrumb/bc_dashboard.png" alt="">
     </section>
     <section class="motivation">
       <h1>Motivation</h1>
       <article>
-        <p>I wanted to make sure that potential users could participate in a scavenger hunts without creating an account through my website. That’s when I decided to use Twilio to dispatch the hunts via text. </p>
+        <p>I have always loved scavenger hunts. In high school, I would create them regularly them for friends and family. I thought that it would be fun to have a tool that made creating scavenger hunts as easy as writing prompts into an editor and then automating participants’ progress using texts.</p>
       </article>
       <img src="./assets/site-screenshots/breadcrumb/bc_history_hunt.png" alt="">
     </section>
     <section class="planning">
       <h1>Planning</h1>
       <article>
-        <p>Planning details go here</p>
+        <p>I knew that I wanted to build a tool for a variety of users, each with their own needs:</p>
+        <ul>
+          <li>Teachers wanting to make their lessons more engaging</li>
+          <li>Friends wanting to make a loved one’s birthday unique</li>
+          <li>College RA’s wanting to make their freshman orientation weeks more interactive</li>
+        </ul>
+        <p>I also knew that an answer that was incredibly close, but not an exact match would ruin the experience for users. So, I used the <a href="https://www.npmjs.com/package/natural" target="_blank">Natural package</a> to create my own fuzzy comparison (allowing "Mario’s" as an answer for "Mario’s Pizza").</p>
       </article>
       <img src="./assets/site-screenshots/breadcrumb/bc_editor.png" alt="">
     </section>
     <section class="outcomes">
       <h1>Outcomes</h1>
       <article>
-        <p>Demo scavenger hunt to 20+ participants. Awarded Best Overall/Most Shippable.</p>
+        <p>After finishing BreadCrumb, I demoed it to 20+ participants by hiding 100 stickers around DevMountain’s campus and creating a scavenger hunt that led participants to them. I was also awarded Best Overall / Most Shippable for my cohort. Creating this full-stack website was an incredible learning experience. In the future, I would like to rebuild the front-end as a React-Native app and also support image uploads as well as text responses for the hunts.</p>
         <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <a href="http://www.breadcrumbproject.com" class="button">Live Site</a>
       </article>
@@ -349,33 +355,36 @@
     <section class="description">
       <h1>Description</h1>
       <article>
-        <p>Description goes here</p>
+        <p>Date Idea Generator was made for people who feel stuck in a rut. Using Yelp’s API, it pulls in local restaurants, parks, cafes, bars, and more to randomize dates. Once a user has provided their location and time, they can randomize their results by shaking their phone or pressing the space bar. If they like a location, they can lock it in. If one of their results is close, but not perfect, they can lock it in by category.</p>
+        <p>I built Date Idea Generator with three other developers while we were students at DevMountain.</p>
       </article>
       <img src="./assets/site-screenshots/dategen/dig_results.png" alt="">
     </section>
     <section class="motivation">
       <h1>Motivation</h1>
       <article>
-        <p>Motivation goes here</p>
+        <p>If you’ve ever brainstormed with a romantic partner about what to do on a Friday night, but decided to watch Netflix instead, then you understand exactly why we decided to build Date Idea Generator. Having experienced many weekends like this, we felt that too many options leads to indecision, which leads to another weekend spent binge-watching House of Cards.</p>
+        <p>To combat this, our site only displays up to three random options at once. Instead of planning out a date from the ground up, you lock in locations one at a time. Because the locations are randomized, and there is no back button, Date Idea Generator encourages people to step outside of their comfort zone.</p>
       </article>
       <img src="./assets/site-screenshots/dategen/dig_final.png" alt="">
     </section>
     <section class="planning">
       <h1>Planning</h1>
       <article>
-        <p>Planning goes here</p>
+        <p>As a group, we decided that randomizing the locations should be as easy as pressing a button, so we found a lot of inspiration from the color palette generator <a href="https://coolors.co/" target="_blank">Coolors.co.</a> We spent a decent amount of the planning period exploring possible sources of our date location info. Eventually, we decided on Yelp’s new Fusion v3 API.</p>
+        <p>At first, we considered having users create accounts, but we eventually agreed that our site should be as easy to use as possible and that memorizing another password might be a barrier to our site’s usability.</p>
       </article>
       <img src="./assets/site-screenshots/dategen/dig_form_with_calendar.png" alt="">
     </section>
     <section class="outcomes">
       <h1>Outcomes</h1>
       <article>
-        <p>Outcomes go here</p>
+        <p>After three weeks of work, we demoed Date Idea Generator in front of our classmates and instructors at DevMountain. I enjoyed my experience collaborating with three other developers in my cohort.</p>
+        <p>I learned a lot from working in a group environment, from discussing wireframes in Adobe XD to deciding how to aggregate our location data. I was lucky to be able to work with three hard-working devs.</p>
         <!-- <iframe style="width: 100%; height: auto;" class="video-walkthrough" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
         <a href="http://www.dateideagenerator.com" class="button">Live Site</a>
       </article>
     </section>
-
   </section>
   
   <!-- PEANUT GALLERY CASE STUDY -->
@@ -399,8 +408,8 @@
     <section class="planning">
       <h1>Planning</h1>
       <article>
-        <p>My first step was to convert movie titles to IMDb ID’s. I decided to use the <a href=“http://www.omdbapi.com/“ target=“_blank”>Open Movie Database API.</a> After that, I had a lot of fun figuring out the best way to scrape reviews from IMDb.</p>
-        <p>At first, I parsed the HTML from each review page using <a href=“https://cheerio.js.org/” target=“_blank”>a library called Cheerio.</a> However, while I was in the process of building my scraper, IMDb went through a total site redesign that broke it. After I discovered that I could access the AJAX for the reviews by changing my request URL, I changed my approach. Using AJAX instead of scraping their HTML, which was prone to change, made my scraper resilient to any future IMDb redesigns.</p>
+        <p>My first step was to convert movie titles to IMDb ID’s. I decided to use the <a href="http://www.omdbapi.com/" target="_blank">Open Movie Database API.</a> After that, I had a lot of fun figuring out the best way to scrape reviews from IMDb.</p>
+        <p>At first, I parsed the HTML from each review page using <a href="https://cheerio.js.org/" target="_blank">a library called Cheerio.</a> However, while I was in the process of building my scraper, IMDb went through a total site redesign that broke it. After I discovered that I could access the AJAX for the reviews by changing my request URL, I changed my approach. Using AJAX instead of scraping their HTML, which was prone to change, made my scraper resilient to any future IMDb redesigns.</p>
       </article>
       <!-- IMG OF IMDB HERE!!! -->
       <img src="./assets/site-screenshots/peanutgallery/imdb_reviews_both_formats.png" alt="">
@@ -431,7 +440,7 @@
       <h1>Motivation</h1>
       <article>
         <p>Yale’s Computer Science department focuses on fundamental topics in C and LISP. When HackYale was founded in 2011, there was a desire on campus for courses on additional topics outside the scope of the major.</p>
-        <p>Specifically, there was a strong need for courses in web development and high-level programming languages. In fact, our <a href=“https://github.com/hackyale/Web-Development-101” target=“_blank”>Introduction to Web Development course</a> regularly had 200+ applicants for ~30 spots.</p>
+        <p>Specifically, there was a strong need for courses in web development and high-level programming languages. In fact, our <a href="https://github.com/hackyale/Web-Development-101" target="_blank">Introduction to Web Development course</a> regularly had 200+ applicants for ~30 spots.</p>
       </article>
       <img src="./assets/site-screenshots/hackyale/ceid_building.jpg" alt="HackYale slide">
     </section>
@@ -440,10 +449,10 @@
       <article>
         <p>I wanted the course to be accessible to students without CS backgrounds. The hardest part was to describe NLP concepts in a straightforward way. I used the following resources when planning out my curriculum:</p>
         <ul>
-          <li><a href=“https://web.stanford.edu/~jurafsky/slp3/” target=“_blank”>Speech and Language Processing</a></li>
-          <li><a href=“https://www.class-central.com/course/coursera-natural-language-processing-836” target=“_blank”>Coursera’s Natural Language Processing MOOC</a></li>
-          <li><a href=“https://www.nltk.org/book/” target=“_blank”>Python’s Natural Language Toolkit docs</a></li>
-          <li><a href=“http://www.birot.hu/courses/2014-LC/” target=“_blank”>Personal notes from LING227: Language and Computation I</a></li>
+          <li><a href="https://web.stanford.edu/~jurafsky/slp3/" target="_blank">Speech and Language Processing</a></li>
+          <li><a href="https://www.class-central.com/course/coursera-natural-language-processing-836" target="_blank">Coursera’s Natural Language Processing MOOC</a></li>
+          <li><a href="https://www.nltk.org/book/" target="_blank">Python’s Natural Language Toolkit docs</a></li>
+          <li><a href="http://www.birot.hu/courses/2014-LC/" target="_blank">Personal notes from LING227: Language and Computation I</a></li>
         </ul>
       </article>
       <img src="./assets/site-screenshots/hackyale/speech_language_book.jpg" alt="">

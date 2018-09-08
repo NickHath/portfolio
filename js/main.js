@@ -10,12 +10,11 @@ $(document).ready(function() {
     navigate();
   });
 
-  // $('a[spa-hash-link]').on('click', function(e) {
-  //   e.preventDefault();
-  //   history.pushState(null, document.title, e.target.getAttribute('href'));
-  //   $('.case-study').hide(); 
-  //   $('.landing').show();
-  // });
+  $('a[spa-hash-link]').on('click', function(e) {
+    history.pushState(null, document.title, `${window.location.origin}/${e.target.getAttribute('href')}`);
+    $('.case-study').hide(); 
+    $('.landing').show();
+  });
 
   // hamburger menu event listeners
   $('#hamburger-menu').click(function() {
