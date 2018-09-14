@@ -88,7 +88,7 @@ body {
   display: grid;
   grid-gap: 0;
   /* all grid-areas are defined at the top of their respective scss partial */
-  grid-template-areas: "header" "skills" "projects" "experience" "education" "resume" "readings" "footer";
+  grid-template-areas: "header" "skills" "projects" "experience" "readings" "footer";
 }
 
 .subsection {
@@ -151,20 +151,15 @@ a.button:hover, a.button:active {
 
 /* DESKTOP STYLING */
 @media screen and (min-width: 768px) {
-  html {
-    height: 1000vh;
-  }
-
   body {
     line-height: 1.375em;
   }
 
   .landing {
     grid-template-columns: 15% 15% 40% 15% 15%;
-    grid-template-rows: 10% 5% 30% 15% 10% 10% 10% 10%;
     grid-gap: none;
     /* all grid-areas are defined at the top of their respective scss partial */
-    grid-template-areas: "..... ..... header ..... ....." "..... ..... skills ..... ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... ..... education ..... ....." "..... ..... resume ..... ....." "..... readings readings readings ....." "footer footer footer footer footer";
+    grid-template-areas: "..... ..... header ..... ....." "..... ..... skills ..... ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... readings readings readings ....." "footer footer footer footer footer";
   }
 
   h1 {

@@ -29,8 +29,6 @@ body {
                         'skills'
                         'projects'
                         'experience'
-                        'education'
-                        'resume'
                         'readings'
                         'footer'
                         ;
@@ -98,7 +96,7 @@ a.button:hover, a.button:active {
 /* DESKTOP STYLING */
 @media screen and (min-width: $tablet-breakpoint) {
   html {
-    height: 1000vh;
+    // height: 1000vh;
   }
   body {
     line-height: 1.375em;
@@ -106,7 +104,8 @@ a.button:hover, a.button:active {
   .landing {
     grid-template-columns: 15% 15% 40% 15% 15%;
     // rows - header, skills, projects, experience, education, resume, readings, footer
-    grid-template-rows: 10% 5% 30% 15% 10% 10% 10% 10%;
+    // grid-template-rows: 10% 5% 30% 15% 10% 10% 10% 10%;
+    // grid-template-rows: 10% 10% 20% 20% 20% 20%;
     grid-gap: none;
 
     /* all grid-areas are defined at the top of their respective scss partial */
@@ -114,8 +113,6 @@ a.button:hover, a.button:active {
                           '..... ..... skills ..... .....'
                           '..... projects projects projects .....'
                           '..... ..... experience ..... .....'
-                          '..... ..... education ..... .....'
-                          '..... ..... resume ..... .....'
                           '..... readings readings readings .....'
                           'footer footer footer footer footer'
                           ;    
