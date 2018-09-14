@@ -4,7 +4,9 @@ $(document).ready(function() {
     .then(res => res.json())
     .then(data => {
       const { list } = data;
-      const articleIDs = Object.keys(list).sort((a, b) => parseInt(list[b].time_added) - parseInt(list[a].time_added));
+      let articleIDs = Object.keys(list).sort((a, b) => parseInt(list[b].time_added) - parseInt(list[a].time_added));
+      // limit to last ten articles
+      articleIDs = articleIDs.slice(0, 10);
       let htmlList = ``;
       articleIDs.forEach(articleID => {
         const article = list[articleID];
