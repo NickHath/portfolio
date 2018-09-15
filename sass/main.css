@@ -140,7 +140,8 @@ li {
   list-style-type: square;
   list-style-position: inside;
   margin-left: 1.25rem;
-  padding-bottom: 0.5rem;
+  margin-right: 1.25rem;
+  padding-bottom: 0.35rem;
 }
 
 a.button {
@@ -387,6 +388,9 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .projects .technologies > i {
   background-color: #EF514F;
+}
+.projects .project-buttons .button {
+  margin-right: 0.25rem;
 }
 
 .project-url {
