@@ -105,6 +105,10 @@ body {
   border-image: linear-gradient(to right, #4FDCEF 50%, #EF514F 50%) 2;
 }
 
+p {
+  line-height: 1.5em;
+}
+
 h1 {
   font-size: 2.5em;
   line-height: 1.25em;
@@ -130,6 +134,13 @@ img {
 a {
   text-decoration: none;
   color: #4FDCEF;
+}
+
+li {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-left: 1.25rem;
+  padding-bottom: 0.5rem;
 }
 
 a.button {
@@ -452,6 +463,41 @@ footer {
 .case-study {
   width: 100vw;
   display: none;
+}
+.case-study .project-title {
+  margin: 0 0 1rem 0.1rem;
+}
+.case-study section.buttons {
+  margin-left: 2.75rem;
+}
+.case-study section.buttons a.button {
+  margin-right: 0.75rem;
+}
+.case-study p, .case-study ul {
+  margin: 0 2.75rem 0.75rem 2.75rem;
+  text-align: justify;
+}
+.case-study .case-study-header {
+  margin: 0 0 1rem 1.5rem;
+}
+.case-study .case-study-header h2 {
+  display: inline-block;
+  opacity: 1;
+}
+.case-study .case-study-header hr {
+  margin: 0 0.5rem 0 0;
+  border: 0;
+  border-left: 3.5px solid #EF514F;
+  border-right: 3.5px solid #4FDCEF;
+  display: inline-block;
+  width: 0;
+  height: 1rem;
+}
+.case-study img {
+  margin-top: 2rem;
+}
+.case-study .description, .case-study .motivation, .case-study .planning, .case-study .outcomes {
+  margin-bottom: 2rem;
 }
 
 /* third-party styling */

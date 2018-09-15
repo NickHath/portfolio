@@ -2,7 +2,39 @@
   width: 100vw;
   // set display to none by default for fake routing
   display: none;
-  header: {
-    // position: fixed;
+  .project-title {
+    margin: 0 0 1rem 0.1rem;
+  }
+  section.buttons {
+    margin-left: 2.75rem;
+    a.button {
+      margin-right: 0.75rem;
+    }
+  }
+  p, ul {
+    margin: 0 2.75rem 0.75rem 2.75rem;
+    text-align: justify;
+  }
+  .case-study-header {
+    margin: 0 0 1rem 1.5rem;
+    h2 {
+      display: inline-block;
+      opacity: 1;
+    }
+    hr {
+      margin: 0 0.5rem 0 0;
+      border: 0;
+      border-left: 3.5px solid $highlight-red;
+      border-right: 3.5px solid $highlight-blue;
+      display: inline-block;
+      width: 0;
+      height: 1rem;
+    }
+  }
+  img {
+    margin-top: 2rem;
+  }
+  .description, .motivation, .planning, .outcomes {
+    margin-bottom: 2rem;
   }
 }
