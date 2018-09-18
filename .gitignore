@@ -3,3 +3,5 @@ packages
 .env
 node_modules
 firebase-debug.log
+/functions
+.firebase

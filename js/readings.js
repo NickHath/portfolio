@@ -6,7 +6,7 @@ $(document).ready(function() {
       const { list } = data;
       let articleIDs = Object.keys(list).sort((a, b) => parseInt(list[b].time_added) - parseInt(list[a].time_added));
       // limit to last ten articles
-      articleIDs = articleIDs.slice(0, 10);
+      articleIDs = articleIDs.slice(0, 7);
       let htmlList = ``;
       articleIDs.forEach(articleID => {
         const article = list[articleID];
