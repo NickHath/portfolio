@@ -3,6 +3,10 @@
   // border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
   .article {
     color: $font-color;
+    margin-bottom: 0.75em;
+    .title, .article-url {
+      display: block;
+    }
     .title {
       font-weight: 700;
     }
@@ -12,6 +16,16 @@
     .article-url:hover {
       color: $highlight-red-dark;
     }
+    .read-date {
+      opacity: 0.5;
+    }
+  }
+  .reading-description, #reading-list {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .reading-description {
+    margin-bottom: 1em;
   }
 }
 

@@ -467,6 +467,10 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .readings .article {
   color: #303030;
+  margin-bottom: 0.75em;
+}
+.readings .article .title, .readings .article .article-url {
+  display: block;
 }
 .readings .article .title {
   font-weight: 700;
@@ -476,6 +480,16 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 .readings .article .article-url:hover {
   color: #A30503;
+}
+.readings .article .read-date {
+  opacity: 0.5;
+}
+.readings .reading-description, .readings #reading-list {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.readings .reading-description {
+  margin-bottom: 1em;
 }
 
 footer {

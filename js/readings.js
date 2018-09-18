@@ -11,13 +11,14 @@ $(document).ready(function() {
       articleIDs.forEach(articleID => {
         const article = list[articleID];
         const readDate = new Date(parseInt(article.time_added) * 1000);
-        // <p>${article.excerpt}</p>
+        const summary = article.excerpt.split(' ').slice(0, 20).join(' ') || '';
+        // <p>Estimated Read Time: ${article.time_to_read} minutes</p>
         htmlList += `
           <section class="article">
             <a class="title" href="${article.resolved_url}" target="_blank">${article.resolved_title}</a>
             <a class="article-url" href="${article.resolved_url}" target="_blank">${article.resolved_url.match(baseUrlRegExp)[0]}</a>
-            <p>Read on ${readDate.toLocaleDateString()}</p>
-            <p>Estimated Read Time: ${article.time_to_read} minutes</p>
+            <p class="read-date">Read on ${readDate.toLocaleDateString()}</p>
+            <p>${summary}...</p>
           </section>
         `
       });
