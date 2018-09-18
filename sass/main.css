@@ -421,12 +421,29 @@ header nav.nav-modal #modal-hamburger-menu {
 .experience-details span {
   display: inline-block;
 }
+.experience-details .experience-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.35em;
+}
 .experience-details img {
-  width: 25%;
-  height: auto;
+  width: auto;
+  margin-right: 0.75em;
+}
+.experience-details img#devmtn, .experience-details img#reh {
+  height: 2em;
+}
+.experience-details img#hackyale, .experience-details img#fusion {
+  height: 1.15em;
+}
+.experience-details h3 {
+  opacity: 0.5;
 }
 .experience-details article {
   display: inline-block;
+}
+.experience-details p {
+  margin-top: 0.5em;
 }
 
 .education {

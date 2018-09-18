@@ -7,12 +7,29 @@
   span {
     display: inline-block;
   }
+  .experience-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.35em;
+  }
   img {
-    width: 25%;
-    height: auto;
+    width: auto;
+    margin-right: 0.75em;
+  }
+  img#devmtn, img#reh {
+    height: 2em;
+  }
+  img#hackyale, img#fusion {
+    height: 1.15em;
+  }
+  h3 {
+    opacity: 0.5;
   }
   article {
     display: inline-block;
+  }
+  p {
+    margin-top: 0.5em;
   }
 }
 
