@@ -17,6 +17,9 @@ nav.subsection {
     display: flex;
     justify-content: space-between;
   }
+  section.name {
+    margin-left: 0.5em;
+  }
   nav.nav-modal {
     position: fixed;
 
@@ -92,14 +95,21 @@ nav.subsection {
   }
 }
 header#intro {
-  margin: 1.5em 1em 0 0.5em;
+  margin: 1em 1em 0 0.5em;
   border: 0;
   font-size: 1.5em;
   font-weight: 300;
-  height: 80vh;
+  height: 85vh;
   p {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
     line-height: 1.35em;
+  }
+  .social-links {
+    margin-top: -0.75em;
+  }
+  .social-links * {
+    margin-right: 0.35em;
+    margin-bottom: 0.25em;
   }
 }
 

@@ -247,6 +247,9 @@ nav.subsection #header-nav {
   display: flex;
   justify-content: space-between;
 }
+nav.subsection section.name {
+  margin-left: 0.5em;
+}
 nav.subsection nav.nav-modal {
   position: fixed;
   top: -10px;
@@ -312,15 +315,22 @@ nav.subsection nav.nav-modal #modal-hamburger-menu {
   }
 }
 header#intro {
-  margin: 1.5em 1em 0 0.5em;
+  margin: 1em 1em 0 0.5em;
   border: 0;
   font-size: 1.5em;
   font-weight: 300;
-  height: 80vh;
+  height: 85vh;
 }
 header#intro p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
   line-height: 1.35em;
+}
+header#intro .social-links {
+  margin-top: -0.75em;
+}
+header#intro .social-links * {
+  margin-right: 0.35em;
+  margin-bottom: 0.25em;
 }
 
 @media screen and (min-width: 768px) {
