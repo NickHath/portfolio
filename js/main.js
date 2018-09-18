@@ -47,10 +47,10 @@ $(document).ready(function() {
       '/': () => { $('.case-study').hide(); $('.landing').show(); window.scrollTo(0, yCoordLanding); },
 
       // for case study routes, hide the landing and show that specific view
-      '/date-idea-generator': () => { $('.landing').hide(); $('.date-idea-generator').show(); window.scrollTo(0, 0); },
-      '/bread-crumb': () => { $('.landing').hide(); $('.bread-crumb').show(); window.scrollTo(0, 0); },
-      '/peanut-gallery': () => { $('.landing').hide(); $('.peanut-gallery').show(); window.scrollTo(0, 0); },
-      '/hack-yale': () => { $('.landing').hide(); $('.hack-yale').show(); window.scrollTo(0, 0); }
+      '/date-idea-generator': () => { $('.landing').hide(); $('.date-idea-generator').show(); window.scrollTo(0, -5); },
+      '/bread-crumb': () => { $('.landing').hide(); $('.bread-crumb').show(); window.scrollTo(0, -5); },
+      '/peanut-gallery': () => { $('.landing').hide(); $('.peanut-gallery').show(); window.scrollTo(0, -5); },
+      '/hack-yale': () => { $('.landing').hide(); $('.hack-yale').show(); window.scrollTo(0, -5); }
     };
     routes[path]();
   }
