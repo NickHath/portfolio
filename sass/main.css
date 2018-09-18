@@ -123,7 +123,7 @@ h2 {
 }
 
 h1.section-header {
-  margin: 0 0 0.5em 0.25em;
+  margin: 0 0 0.5em 1rem;
 }
 
 img {
@@ -392,9 +392,18 @@ header nav.nav-modal #modal-hamburger-menu {
 .projects .project-buttons .button {
   margin-right: 0.25rem;
 }
-
-.project-url {
+.projects .project-url {
   color: #EF514F;
+}
+.projects .project-details {
+  margin: 0 1em 1.5em 1em;
+}
+.projects .project-details img.project-preview-photo {
+  max-width: calc(100% + 2em);
+  margin: 0.75em 0 1em -1em;
+}
+.projects .project-details .technologies {
+  margin-bottom: 0.25em;
 }
 
 @media screen and (min-width: 768px) {
@@ -407,18 +416,15 @@ header nav.nav-modal #modal-hamburger-menu {
 }
 
 .experience-details {
-  padding-left: 1em;
+  margin: 0 1em 1.5em 1em;
 }
-
 .experience-details span {
   display: inline-block;
 }
-
 .experience-details img {
-  width: 40%;
+  width: 25%;
   height: auto;
 }
-
 .experience-details article {
   display: inline-block;
 }

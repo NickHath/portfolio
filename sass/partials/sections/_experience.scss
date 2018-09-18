@@ -3,17 +3,17 @@
   // border-image: linear-gradient(to right, $highlight-red 50%, $highlight-blue 50%) 2;
 }
 .experience-details {
-  padding-left: 1em;
-}
-.experience-details span {
-  display: inline-block;
-}
-.experience-details img {
-  width: 40%;
-  height: auto;
-}
-.experience-details article {
-  display: inline-block;
+  margin: 0 1em 1.5em 1em;
+  span {
+    display: inline-block;
+  }
+  img {
+    width: 25%;
+    height: auto;
+  }
+  article {
+    display: inline-block;
+  }
 }
 
 // DESKTOP STYLING

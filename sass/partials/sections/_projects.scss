@@ -10,20 +10,28 @@
     padding: 0.25em;
     border: 1px solid white;
   }
-  // maybe just red icons by default
   .technologies > i {
+    // red icons
     background-color: $highlight-red;
   }
-  // .technologies.blue-icons > i {
-  //   background-color: $highlight-blue;
-  // }
   .project-buttons .button {
     margin-right: 0.25rem;
   }
+  .project-url {
+    color: $highlight-red;
+  }
+  .project-details {
+    margin: 0 1em 1.5em 1em;
+    img.project-preview-photo {
+      max-width: calc(100% + 2em);
+      margin: 0.75em 0 1em -1em;
+    }
+    .technologies {
+      margin-bottom: 0.25em;
+    }
+  }
 }
-.project-url {
-  color: $highlight-red;
-}
+
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
