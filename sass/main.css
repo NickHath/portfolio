@@ -495,8 +495,36 @@ header nav.nav-modal #modal-hamburger-menu {
 footer {
   grid-area: footer;
   background-color: #EF514F;
-  color: white;
   border: none;
+  color: white;
+}
+footer h1, footer button.download-resume, footer a.contact-link, footer a.contact-link:hover, footer a.contact-link:visited {
+  font-weight: 700;
+  color: white;
+}
+footer p {
+  font-size: 1.25em;
+}
+footer button.download-resume {
+  border: 4px solid white;
+  font-size: 2em;
+  display: flex;
+  align-content: center;
+  padding: 0.5em 0.75em 0.5em 0.75em;
+  margin: 1em 0 1em 0;
+  background-color: transparent;
+}
+footer button.download-resume img {
+  height: 1.2em;
+  width: auto;
+  margin-right: 0.5em;
+}
+footer button.download-resume:hover {
+  cursor: pointer;
+}
+footer p, footer button.download-resume {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 /* media breakpoints */

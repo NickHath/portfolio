@@ -4,8 +4,36 @@ footer {
   // background-color: $font-color;
   background-color: $highlight-red;
   // border-top: 5px solid $highlight-blue;
-  color: white;
   border: none;
+  color: white;
+  h1, button.download-resume, a.contact-link, a.contact-link:hover, a.contact-link:visited  {
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    font-size: 1.25em;
+  }
+  button.download-resume {
+    border: 4px solid white;
+    font-size: 2em;
+    display: flex;
+    align-content: center;
+    padding: 0.5em 0.75em 0.5em 0.75em;
+    margin: 1em 0 1em 0;
+    background-color: transparent;
+    img {
+      height: 1.2em;
+      width: auto;
+      margin-right: 0.5em;
+    }
+  }
+  button.download-resume:hover {
+    cursor: pointer;
+  }
+  p, button.download-resume {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 // DESKTOP STYLING
