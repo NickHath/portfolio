@@ -228,15 +228,7 @@ a.button:hover, a.button:active {
   }
 }
 /* partials for each subsection */
-header.subsection {
-  height: 100vh;
-  grid-area: header;
-  border-top: 10px solid #EF514F;
-  padding: 1.5em 0 0 0;
-  border-image: none;
-}
-
-header.subsection:before {
+nav.subsection:before {
   content: "";
   width: 100%;
   border-top: 10px solid #4FDCEF;
@@ -245,16 +237,17 @@ header.subsection:before {
   box-shadow: 0 1px 1px rgba(211, 94, 94, 0.2);
 }
 
-header .intro {
-  font-size: 1.375em;
-  line-height: 1.13636364em;
-  font-weight: 300;
+nav.subsection {
+  grid-area: header;
+  border-top: 10px solid #EF514F;
+  padding: 1.5em 0 0 0;
+  border-image: none;
 }
-header #header-nav {
+nav.subsection #header-nav {
   display: flex;
   justify-content: space-between;
 }
-header nav.nav-modal {
+nav.subsection nav.nav-modal {
   position: fixed;
   top: -10px;
   z-index: 1;
@@ -266,22 +259,22 @@ header nav.nav-modal {
   flex-direction: column;
   display: none;
 }
-header nav.nav-modal a, header nav.nav-modal .email {
+nav.subsection nav.nav-modal a, nav.subsection nav.nav-modal .email {
   padding-bottom: 1em;
 }
-header nav.nav-modal a {
+nav.subsection nav.nav-modal a {
   display: block;
   color: #303030;
   font-size: 1.75em;
 }
-header nav.nav-modal a:active {
+nav.subsection nav.nav-modal a:active {
   color: #4FDCEF;
 }
-header nav.nav-modal .email {
+nav.subsection nav.nav-modal .email {
   font-size: 1.25em;
   color: #EF514F;
 }
-header nav.nav-modal #modal-hamburger-menu {
+nav.subsection nav.nav-modal #modal-hamburger-menu {
   position: absolute;
   top: 2.5em;
   right: 0;
@@ -318,17 +311,29 @@ header nav.nav-modal #modal-hamburger-menu {
     opacity: 0;
   }
 }
+header#intro {
+  margin: 1.5em 1em 0 0.5em;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: 300;
+  height: 80vh;
+}
+header#intro p {
+  margin-bottom: 0.5em;
+  line-height: 1.35em;
+}
+
 @media screen and (min-width: 768px) {
   header {
     padding-top: 50%;
   }
 
-  header.subsection {
+  nav.subsection {
     border-top: none;
     padding: 0;
   }
 
-  header.subsection:before {
+  nav.subsection:before {
     content: none;
   }
 
@@ -563,7 +568,7 @@ footer p, footer button.download-resume {
   height: 1rem;
 }
 .case-study img {
-  margin-top: 2rem;
+  margin-top: 0.75rem;
 }
 .case-study .description, .case-study .motivation, .case-study .planning, .case-study .outcomes {
   margin-bottom: 2rem;
