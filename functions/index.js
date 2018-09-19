@@ -1,6 +1,8 @@
 const axios = require('axios')
     , functions = require('firebase-functions');
 
+
+// Pocket API credentials
 const body = {
   "consumer_key": functions.config().readings.consumer_key,
   "access_token": functions.config().readings.access_token
