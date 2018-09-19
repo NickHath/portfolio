@@ -1,6 +1,6 @@
 $(document).ready(function() {
   const baseUrlRegExp = /^https?:\/\/[^\/]+/i;
-  fetch('http://localhost:4500/api/readings')
+  fetch('https://us-central1-nickhath-portfolio.cloudfunctions.net/readings')
     .then(res => res.json())
     .then(data => {
       const { list } = data;
@@ -12,7 +12,6 @@ $(document).ready(function() {
         const article = list[articleID];
         const readDate = new Date(parseInt(article.time_added) * 1000);
         const summary = article.excerpt.split(' ').slice(0, 20).join(' ') || '';
-        // <p>Estimated Read Time: ${article.time_to_read} minutes</p>
         htmlList += `
           <section class="article">
             <a class="title" href="${article.resolved_url}" target="_blank">${article.resolved_title}</a>
