@@ -74,6 +74,7 @@ html {
 }
 
 body {
+  position: absolute;
   font-family: "M PLUS 1p", sans-serif;
   color: #303030;
   -webkit-font-smoothing: antialiased;
@@ -88,7 +89,7 @@ body {
   display: grid;
   grid-gap: 0;
   /* all grid-areas are defined at the top of their respective scss partial */
-  grid-template-areas: "header" "skills" "projects" "experience" "readings" "footer";
+  grid-template-areas: "nav" "intro" "skills" "projects" "experience" "readings" "footer";
 }
 
 .subsection {
@@ -171,7 +172,7 @@ a.button:hover, a.button:active {
     grid-template-columns: 15% 15% 40% 15% 15%;
     grid-gap: none;
     /* all grid-areas are defined at the top of their respective scss partial */
-    grid-template-areas: "..... ..... header ..... ....." "..... ..... skills ..... ....." "..... projects projects projects ....." "..... ..... experience ..... ....." "..... readings readings readings ....." "footer footer footer footer footer";
+    grid-template-areas: "..... ..... nav ..... ....." "..... ..... intro ..... ....." "..... skills skills skills ....." "..... projects projects projects ....." "..... experience experience experience ....." "..... readings readings readings ....." "footer footer footer footer footer";
   }
 
   h1 {
@@ -204,7 +205,7 @@ a.button:hover, a.button:active {
   z-index: -1;
   /* see preserveAspectRatio on the html element for scaling details */
   width: 100%;
-  height: 1000vh;
+  height: 100%;
 }
 
 .svg-line {
@@ -238,7 +239,7 @@ nav.subsection:before {
 }
 
 nav.subsection {
-  grid-area: header;
+  grid-area: nav;
   border-top: 10px solid #EF514F;
   padding: 1.5em 0 0 0;
   border-image: none;
@@ -320,6 +321,7 @@ header#intro {
   font-size: 1.25em;
   font-weight: 300;
   height: 85vh;
+  grid-area: intro;
 }
 header#intro p {
   margin-bottom: 0.75em;
@@ -334,8 +336,14 @@ header#intro .social-links * {
 }
 
 @media screen and (min-width: 768px) {
-  header {
-    padding-top: 50%;
+  section#header-nav {
+    margin-top: 7.5vh;
+  }
+
+  header#intro {
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 1.35em;
   }
 
   nav.subsection {
@@ -349,6 +357,21 @@ header#intro .social-links * {
 
   #hamburger-menu {
     display: none;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+
+  section.name {
+    text-align: center;
+    margin: auto !important;
+  }
+  section.name h1 {
+    font-size: 4.5em;
+  }
+  section.name h2 {
+    font-size: 2.75em;
   }
 }
 .skills {
@@ -381,12 +404,11 @@ header#intro .social-links * {
   .icons figure figcaption {
     -webkit-transition: opacity 0.3s;
     color: #8F8F8F;
-    opacity: 0;
   }
 
   .icons figure:hover figcaption {
-    -webkit-transition: opacity 0.3s;
-    opacity: 1;
+    -webkit-transition: color 0.3s;
+    color: #303030;
   }
 }
 .projects {
@@ -542,6 +564,11 @@ footer p, footer button.download-resume {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 15vw !important;
+  }
+}
 /* media breakpoints */
 /* hide svg animation on screens smaller than 700px wide */
 .case-study {
@@ -584,6 +611,12 @@ footer p, footer button.download-resume {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .case-study {
+    width: 60%;
+    margin: auto;
+  }
+}
 /* third-party styling */
 /*!
  * Hamburgers

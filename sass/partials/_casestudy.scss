@@ -38,3 +38,10 @@
     margin-bottom: 2rem;
   }
 }
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .case-study {
+    width: 60%;
+    margin: auto;
+  }
+}

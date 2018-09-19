@@ -38,5 +38,7 @@ footer {
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-
+  footer {
+    padding-left: 15vw !important;
+  }
 }

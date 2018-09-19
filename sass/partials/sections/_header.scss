@@ -9,7 +9,7 @@ nav.subsection:before {
 }
 nav.subsection {
   // fix so the line is right below the view
-  grid-area: header;
+  grid-area: nav;
   border-top: 10px solid $highlight-red;
   padding: 1.5em 0 0 0 ;
   border-image: none;
@@ -100,6 +100,7 @@ header#intro {
   font-size: 1.25em;
   font-weight: 300;
   height: 85vh;
+  grid-area: intro;
   p {
     margin-bottom: 0.75em;
     line-height: 1.35em;
@@ -115,8 +116,13 @@ header#intro {
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-  header {
-    padding-top: 50%;
+  section#header-nav {
+    margin-top: 7.5vh;
+  }
+  header#intro {
+    padding-top: 5vh;
+    text-align: center;
+    font-size: 1.35em;
   }
   nav.subsection {
     border-top: none;
@@ -127,5 +133,18 @@ header#intro {
   }
   #hamburger-menu {
     display: none;
+  }
+  .down-arrow {
+    display: none;
+  }
+  section.name {
+    text-align: center;
+    h1 {
+      font-size: 4.5em;
+    }
+    h2 {
+      font-size: 2.75em;
+    }
+    margin: auto !important;
   }
 }

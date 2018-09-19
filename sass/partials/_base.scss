@@ -8,6 +8,8 @@ html {
   box-sizing: inherit;
 }
 body {
+  // absolute positioning allows svg to scale to browser height
+  position: absolute;
   font-family: $main-font;
   color: $font-color;
   // font optimization and smoothing
@@ -25,7 +27,8 @@ body {
   display: grid;
   grid-gap: 0;
   /* all grid-areas are defined at the top of their respective scss partial */
-  grid-template-areas:  'header'
+  grid-template-areas:  'nav'
+                        'intro'
                         'skills'
                         'projects'
                         'experience'
@@ -118,10 +121,11 @@ a.button:hover, a.button:active {
     grid-gap: none;
 
     /* all grid-areas are defined at the top of their respective scss partial */
-    grid-template-areas:  '..... ..... header ..... .....'
-                          '..... ..... skills ..... .....'
+    grid-template-areas:  '..... ..... nav ..... .....'
+                          '..... ..... intro ..... .....'
+                          '..... skills skills skills .....'
                           '..... projects projects projects .....'
-                          '..... ..... experience ..... .....'
+                          '..... experience experience experience .....'
                           '..... readings readings readings .....'
                           'footer footer footer footer footer'
                           ;    
