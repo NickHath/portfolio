@@ -35,7 +35,16 @@
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-  a.project-url:hover {
-    color: $highlight-red-dark;
+  .projects {
+    a.project-url:hover {
+      color: $highlight-red-dark;
+    }
+    .project-details {
+      margin: 0;
+      img.project-preview-photo {
+        max-width: 100%;
+        margin: 0;
+      }
+    }    
   }
 }

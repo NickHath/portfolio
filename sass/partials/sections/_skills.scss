@@ -34,7 +34,7 @@
     color: $secondary-font-color;
   }
   .icons figure:hover figcaption {
-    -webkit-transition: color 0.3s;
-    color: $font-color;
+    -webkit-transition: font-weight color 0.3s;
+    color: black;
   }
 }

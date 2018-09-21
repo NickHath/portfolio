@@ -112,6 +112,12 @@ header#intro {
     margin-right: 0.35em;
     margin-bottom: 3em;
   }
+  a {
+    color: $highlight-blue;
+  }
+  a:hover {
+    color: $highlight-blue-dark;
+  }
 }
 
 // DESKTOP STYLING

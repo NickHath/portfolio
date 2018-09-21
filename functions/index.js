@@ -1,6 +1,9 @@
 const axios = require('axios')
+    , cors = require('cors')
     , functions = require('firebase-functions');
 
+// enable cross origin requests
+cors({ origin: 'true' });
 
 // Pocket API credentials
 const body = {
