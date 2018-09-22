@@ -118,6 +118,9 @@ header#intro {
   a:hover {
     color: $highlight-blue-dark;
   }
+  a.button:hover {
+    color: $highlight-red;
+  }
 }
 
 // DESKTOP STYLING

@@ -31,5 +31,12 @@
 
 // DESKTOP STYLING
 @media screen and (min-width: $tablet-breakpoint) {
-
+  .readings {
+    .article {
+      .title {
+        font-size: 1.4em;
+        line-height: 1.5em;
+      }
+    }
+  }
 }
