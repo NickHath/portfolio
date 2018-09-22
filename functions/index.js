@@ -1,9 +1,8 @@
 const axios = require('axios')
-    , cors = require('cors')
     , functions = require('firebase-functions');
 
 // enable cross origin requests
-cors({ origin: 'true' });
+const corsHandler = require('cors')({ origin: true });
 
 // Pocket API credentials
 const body = {
@@ -17,7 +16,10 @@ const config = {
 };
 
 exports.readings = functions.https.onRequest((req, res) => {
-  axios.post('https://getpocket.com/v3/get', body, config)
-       .then(readings => res.status(200).send(readings.data))
-       .catch(err => res.status(500).send(err));
+  corsHandler(req, res, () => {
+    axios.post('https://getpocket.com/v3/get', body, config)
+      .then(readings => res.status(200).send(readings.data))
+      .catch(err => res.status(500).send(err));
+  });
 });
+
