@@ -640,6 +640,10 @@ footer p, footer button.download-resume {
   .case-study {
     width: 60%;
     margin: auto;
+    margin-top: 3em;
+    padding-top: 2em;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #EF514F 50%, #4FDCEF 50%) 2;
   }
 
   .project-title {
