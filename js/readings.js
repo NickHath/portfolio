@@ -11,7 +11,7 @@ $(document).ready(function() {
       articleIDs.forEach(articleID => {
         const article = list[articleID];
         const readDate = new Date(parseInt(article.time_added) * 1000);
-        const summary = article.excerpt.split(' ').slice(0, 20).join(' ') || '';
+        const summary = article.excerpt.split(' ').slice(0, 30).join(' ') || '';
         htmlList += `
           <section class="article">
             <a class="title" href="${article.resolved_url}" target="_blank">${article.resolved_title}</a>
